@@ -17,7 +17,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
-
 public class VeggieWay implements ModInitializer 
 {
     public static Logger LOGGER = LogManager.getLogger();
