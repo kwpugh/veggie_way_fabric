@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:carrot",
+		"minecraft:dried_kelp",
+		"veggie_way:pumpkin_chunk"
+	]
+}

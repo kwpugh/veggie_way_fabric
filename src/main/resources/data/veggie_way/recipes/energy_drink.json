@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:glass_bottle"
+        },
+        "B": {
+            "item": "veggie_way:energy_powder"
+        },
+        "C": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "veggie_way:energy_drink",
+        "count": 4
+    }
+}

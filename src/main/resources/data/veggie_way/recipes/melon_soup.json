@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:melon_chunk"
+        },
+        "B":
+        {
+            "item": "minecraft:bowl"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:melon_soup",
+        "count": 1
+    }
+}

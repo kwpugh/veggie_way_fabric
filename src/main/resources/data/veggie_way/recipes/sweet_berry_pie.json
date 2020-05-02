@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+             "tag": "c:flour"
+        },
+        {
+            "item": "minecraft:sweet_berries"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:sweet_berry_pie",
+        "count": 1
+    }
+}

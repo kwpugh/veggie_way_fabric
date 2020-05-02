@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "veggie_way:knife"
+        },
+        {
+            "item": "minecraft:pumpkin"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:pumpkin_chunk",
+        "count": 8
+    }
+}

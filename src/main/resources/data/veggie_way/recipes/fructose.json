@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "tag": "veggie_way:fruits"
+        },
+        "B":
+        {
+            "item": "veggie_way:drying_agent"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:fructose",
+        "count": 4
+    }
+}

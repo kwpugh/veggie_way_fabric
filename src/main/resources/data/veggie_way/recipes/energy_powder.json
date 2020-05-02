@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "ABA",
+        "BAB",
+        "ABA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:caffeine"
+        },
+        "B":
+        {
+            "item": "veggie_way:fructose"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:energy_powder",
+        "count": 4
+    }
+}

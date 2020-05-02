@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.kwpugh.veggie_way.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": ["RecipeRemainderMixin"],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

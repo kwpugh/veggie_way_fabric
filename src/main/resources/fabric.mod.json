@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "veggie_way",
+  "version": "${version}",
+  "name": "The Veggie Way",
+  "description": "The veggie way to nutritious food without killing",
+  "authors": [
+    "kwpugh"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/veggie_way/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kwpugh.veggie_way.VeggieWay"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": ["veggieway.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}

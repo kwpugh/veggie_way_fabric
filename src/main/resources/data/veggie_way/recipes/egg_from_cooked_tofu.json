@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "veggie_way:cooked_tofu"
+        },
+        {
+            "item": "veggie_way:cooked_tofu"
+        },
+        {
+            "item": "veggie_way:cooked_tofu"
+        }
+    ],
+    "result": {
+        "item": "minecraft:egg",
+        "count": 1
+    }
+}

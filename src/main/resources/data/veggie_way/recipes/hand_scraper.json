@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " C ",
+        " CC",
+        "A  "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "C":
+        {
+            "item": "minecraft:iron_nugget"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:hand_scraper",
+        "count": 1
+    }
+}

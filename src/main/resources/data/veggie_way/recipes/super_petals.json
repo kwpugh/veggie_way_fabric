@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "DCE",
+        "BAB",
+        "ECD"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:drying_agent"
+        },
+       "B":
+        {
+            "item": "minecraft:allium"
+        },
+       "C":
+        {
+            "item": "minecraft:dandelion"
+        },
+       "D":
+        {
+            "item": "minecraft:blue_orchid"
+        },
+       "E":
+        {
+            "item": "minecraft:oxeye_daisy"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:super_petals",
+        "count": 3
+    }
+}

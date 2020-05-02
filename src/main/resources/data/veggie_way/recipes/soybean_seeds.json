@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "veggie_way:soybean"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:soybean_seeds",
+        "count": 1
+    }
+}

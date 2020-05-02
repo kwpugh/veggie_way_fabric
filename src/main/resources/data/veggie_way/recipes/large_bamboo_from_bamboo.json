@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "veggie_way:bamboo_sheet"
+        }
+    },
+    "result": {
+        "item": "veggie_way:large_bamboo_sheet",
+        "count": 1
+    }
+}

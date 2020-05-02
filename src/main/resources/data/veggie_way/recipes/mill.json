@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " A ",
+        " B ",
+        " C "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "item": "minecraft:diorite_slab"
+        },
+        "C":
+        {
+            "item": "minecraft:granite_slab"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:mill",
+        "count": 1
+    }
+}

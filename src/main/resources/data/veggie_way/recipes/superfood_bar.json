@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "ABA",
+        "BAB",
+        "ABA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:superfood_powder"
+        },
+        "B":
+        {
+             "tag": "c:flour"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:superfood_bar",
+        "count": 2
+    }
+}

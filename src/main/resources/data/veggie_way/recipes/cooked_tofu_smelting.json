@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "veggie_way:fresh_tofu"
+  },
+  "result": "veggie_way:cooked_tofu",
+  "experience": 0.35,
+  "cookingtime": 200
+}

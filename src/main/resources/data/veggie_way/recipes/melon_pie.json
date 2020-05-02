@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "tag": "c:flour"
+        },
+        {
+            "item": "minecraft:melon_slice"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:melon_pie",
+        "count": 1
+    }
+}

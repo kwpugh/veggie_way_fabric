@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " BB",
+        " BB",
+        "A  "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "item": "minecraft:iron_nugget"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:hand_rake",
+        "count": 1
+    }
+}
