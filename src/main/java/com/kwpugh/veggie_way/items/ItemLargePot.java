@@ -27,15 +27,7 @@ public class ItemLargePot extends Item implements CustomRecipeRemainder
     @Override
     public ItemStack getRecipeRemainder(ItemStack stackIn)
     {	
-    	ItemStack stack = stackIn.copy();
-    	stack.setDamage(stack.getDamage() + 1);
-
-    	if(stack.getDamage() >= stack.getMaxDamage())
-    	{
-    		stack.decrement(1);
-    	}
-    	
-        return stack;    
+        return stackIn; // This item doesnt have a durability during creation, it is maxCount=1 so it must be infinite use?
     }
     
 	@Override
