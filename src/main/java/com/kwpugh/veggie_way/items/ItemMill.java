@@ -39,7 +39,8 @@ public class ItemMill extends Item implements CustomRecipeRemainder
     }
     
 	@Override
-	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context)
+	{
 		super.appendTooltip(stack, world, tooltip, context);
 		tooltip.add((new TranslatableText("item.veggie_way.mill.line1").formatted(Formatting.GREEN)));
 	}

@@ -16,7 +16,9 @@
     "main": [
       "com.kwpugh.veggie_way.VeggieWay"
     ],
-    "client": [],
+    "client": [
+     "com.kwpugh.veggie_way.VeggieWayClient"
+     ],
     "server": []
   },
   "mixins": ["veggieway.mixins.json"],
