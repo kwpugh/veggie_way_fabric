@@ -20,19 +20,22 @@ repositories {
 }
 
 dependencies {
-    modCompile "me.shedaniel:RoughlyEnoughItems:3.6.14"
+    modCompile "me.shedaniel:RoughlyEnoughItems:4.3.1-unstable"
 }
 
 dependencies {
-	//to change the versions see the gradle.properties file
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-	modCompile "me.sargunvohra.mcmods:autoconfig1u:${project.autoconfig_version}"
-	include "me.sargunvohra.mcmods:autoconfig1u:${project.autoconfig_version}"
+    minecraft "com.mojang:minecraft:20w18a"
+    mappings "net.fabricmc:yarn:20w18a+build.13:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.8.2+build.194"
+            
+    //Fabric api
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.10.1+build.336-1.16"
+    
+    //Autoconfig
+  	modCompile "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
+    include "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
 }
+
 
 processResources {
 	inputs.property "version", project.version

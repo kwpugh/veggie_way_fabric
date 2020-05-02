@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:water_bucket"
+        },
+        {
+            "item": "veggie_way:soybean"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:fresh_tofu",
+        "count": 1
+    }
+}

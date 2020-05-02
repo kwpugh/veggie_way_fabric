@@ -11,9 +11,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemLargePot extends Item implements CustomRecipeRemainder
+public class ItemMill extends Item implements CustomRecipeRemainder
 {
-	public ItemLargePot(Settings properties)
+	public ItemMill(Settings properties)
 	{
 		super(properties);
 	}
@@ -39,9 +39,9 @@ public class ItemLargePot extends Item implements CustomRecipeRemainder
     }
     
 	@Override
-	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context)
+	{
 		super.appendTooltip(stack, world, tooltip, context);
-		tooltip.add((new TranslatableText("item.veggie_way.large_pot.line1").formatted(Formatting.GREEN)));
+		tooltip.add((new TranslatableText("item.veggie_way.mill.line1").formatted(Formatting.GREEN)));
 	}
-
 }
