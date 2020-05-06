@@ -5,6 +5,9 @@ import net.minecraft.item.FoodComponent;
 
 public class FoodList
 {
+    static int friedEggHunger = VeggieWay.getConfig().misc.fried_egg_hunger;
+    static float friedEggSaturation = VeggieWay.getConfig().misc.fried_egg_saturation;
+    
     static int chocolateBarHunger = VeggieWay.getConfig().misc.chocolate_bar_hunger;
     static float chocolateBarSaturation = VeggieWay.getConfig().misc.chocolate_bar_saturation;
 
@@ -57,6 +60,7 @@ public class FoodList
     static float superFoodSaturation = VeggieWay.getConfig().super_foods.superFoodBar_saturation;
 
     public static FoodComponent chocolate_bar = (new FoodComponent.Builder()).hunger(chocolateBarHunger).saturationModifier(chocolateBarSaturation).alwaysEdible().snack().build();
+    public static FoodComponent fried_egg = (new FoodComponent.Builder()).hunger(friedEggHunger).saturationModifier(friedEggSaturation).alwaysEdible().snack().build();
     public static FoodComponent cactus_chunk = (new FoodComponent.Builder()).hunger(cactusChunkHunger).saturationModifier(cactusChunkSaturation).alwaysEdible().snack().build();
     public static FoodComponent pumpkin_chunk = (new FoodComponent.Builder()).hunger(pumpkinChunkHunger).saturationModifier(pumpkinChunkSaturation).alwaysEdible().snack().build();
     public static FoodComponent melon_chunk = (new FoodComponent.Builder()).hunger(melonChunkHunger).saturationModifier(melonChunkSaturation).alwaysEdible().snack().build();

@@ -1,6 +1,9 @@
 package com.kwpugh.veggie_way.blocks;
 
+import java.util.List;
+
 import com.kwpugh.veggie_way.init.ItemInit;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
@@ -13,11 +16,9 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.BlockView;
 
-import java.util.List;
-
-public class PlantLentil extends CropBlock
+public class PlantCorn extends CropBlock
 { 
-    public PlantLentil(Block.Settings builder)
+    public PlantCorn(Block.Settings builder)
     {
         super(builder);
     }
@@ -25,7 +26,7 @@ public class PlantLentil extends CropBlock
     @Environment(EnvType.CLIENT)
     protected ItemConvertible getSeedsItem()
     {
-        return ItemInit.LENTIL_SEEDS;
+        return ItemInit.CORN_SEEDS;
     }
 
     @Environment(EnvType.CLIENT)
@@ -33,6 +34,6 @@ public class PlantLentil extends CropBlock
     public void buildTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
     {
         super.buildTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.lentil_plant").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("block.veggie_way.corn_plant").formatted(Formatting.GREEN)));
     }
 }

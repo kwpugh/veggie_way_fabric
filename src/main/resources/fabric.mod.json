@@ -10,7 +10,7 @@
   "contributors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/veggie_way/icon.png",
+  "icon": "assets/veggie_way/textures/item/carrot.png",
   "environment": "*",
   "entrypoints": {
     "main": [

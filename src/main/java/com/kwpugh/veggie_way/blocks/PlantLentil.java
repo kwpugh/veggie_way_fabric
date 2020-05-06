@@ -23,13 +23,15 @@ public class PlantLentil extends CropBlock
     }
 
     @Environment(EnvType.CLIENT)
-    protected ItemConvertible getSeedsItem() {
+    protected ItemConvertible getSeedsItem()
+    {
         return ItemInit.LENTIL_SEEDS;
     }
 
     @Environment(EnvType.CLIENT)
     @Override
-    public void buildTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) {
+    public void buildTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
+    {
         super.buildTooltip(stack, view, tooltip, options);
         tooltip.add((new TranslatableText("block.veggie_way.lentil_plant").formatted(Formatting.GREEN)));
     }
