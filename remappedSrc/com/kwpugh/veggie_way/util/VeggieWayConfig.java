@@ -127,6 +127,11 @@ public class VeggieWayConfig implements ConfigData
 		public int chocolate_bar_hunger = 4;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
 		public float chocolate_bar_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int fried_egg_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float fried_egg_saturation = 0.2F;
 	}
 
 }

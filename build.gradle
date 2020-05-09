@@ -23,15 +23,16 @@ dependencies {
     modCompile "me.shedaniel:RoughlyEnoughItems:4.3.1-unstable"
 }
 
+
 dependencies {
-    minecraft "com.mojang:minecraft:20w18a"
-    mappings "net.fabricmc:yarn:20w18a+build.14:v2"
+    minecraft "com.mojang:minecraft:20w19a"
+    mappings "net.fabricmc:yarn:20w19a+build.4:v2"
     modImplementation "net.fabricmc:fabric-loader:0.8.2+build.194"
             
     //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.10.4+build.340-1.16"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.10.6+build.342-1.16"
     
-    //Autoconfig
+        //Autoconfig
   	modCompile "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
     include "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
 }
