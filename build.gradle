@@ -20,17 +20,19 @@ repositories {
 }
 
 dependencies {
-    modCompile "me.shedaniel:RoughlyEnoughItems:4.3.1-unstable"
+    modCompile "me.shedaniel:RoughlyEnoughItems:4.3.7-unstable"
 }
 
 
 dependencies {
-    minecraft "com.mojang:minecraft:20w19a"
-    mappings "net.fabricmc:yarn:20w19a+build.4:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.8.2+build.194"
-            
-    //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.10.6+build.342-1.16"
+    	//to change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	
     
         //Autoconfig
   	modCompile "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
