@@ -23,8 +23,8 @@ public class VeggieWayLootTables
 	public static void init()
 	{	
 		FabricLootPoolBuilder QUINOA_SEEDS = FabricLootPoolBuilder.builder()
-				.withRolls(ConstantLootTableRange.create(1))
-				.withEntry(ItemEntry.builder(ItemInit.QUINOA_SEEDS))
+				.rolls(ConstantLootTableRange.create(1))
+				.with(ItemEntry.builder(ItemInit.QUINOA_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(QUINOA_SEEDS,
@@ -34,8 +34,8 @@ public class VeggieWayLootTables
 		));
 
 		FabricLootPoolBuilder SOYBEAN_SEEDS = FabricLootPoolBuilder.builder()
-				.withRolls(ConstantLootTableRange.create(1))
-				.withEntry(ItemEntry.builder(ItemInit.SOYBEAN_SEEDS))
+				.rolls(ConstantLootTableRange.create(1))
+				.with(ItemEntry.builder(ItemInit.SOYBEAN_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(SOYBEAN_SEEDS,
@@ -45,8 +45,8 @@ public class VeggieWayLootTables
 		));		
 		
 		FabricLootPoolBuilder LENTIL_SEEDS = FabricLootPoolBuilder.builder()
-				.withRolls(ConstantLootTableRange.create(1))
-				.withEntry(ItemEntry.builder(ItemInit.LENTIL_SEEDS))
+				.rolls(ConstantLootTableRange.create(1))
+				.with(ItemEntry.builder(ItemInit.LENTIL_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(LENTIL_SEEDS,
@@ -56,8 +56,8 @@ public class VeggieWayLootTables
 		));	
 		
 		FabricLootPoolBuilder CORN_SEEDS = FabricLootPoolBuilder.builder()
-				.withRolls(ConstantLootTableRange.create(1))
-				.withEntry(ItemEntry.builder(ItemInit.CORN_SEEDS))
+				.rolls(ConstantLootTableRange.create(1))
+				.with(ItemEntry.builder(ItemInit.CORN_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(CORN_SEEDS,
@@ -67,8 +67,8 @@ public class VeggieWayLootTables
 		));	
 		
 		FabricLootPoolBuilder DRYING_AGENT = FabricLootPoolBuilder.builder()
-				.withRolls(ConstantLootTableRange.create(1))
-				.withEntry(ItemEntry.builder(ItemInit.DRYING_AGENT))
+				.rolls(ConstantLootTableRange.create(1))
+				.with(ItemEntry.builder(ItemInit.DRYING_AGENT))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(DRYING_AGENT,
@@ -106,7 +106,7 @@ public class VeggieWayLootTables
 
 		public void insert(FabricLootSupplierBuilder supplier)
 		{
-			supplier.withPool(lootPool);
+			supplier.pool(lootPool);
 		}
 	}
 }
