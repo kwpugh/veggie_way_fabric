@@ -10,9 +10,9 @@ import net.minecraft.util.collection.DefaultedList;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(ShapelessRecipe.class)
-public abstract class RecipeRemainderMixin implements CraftingRecipe
+public abstract class RecipeRemainderVeggieWayMixin implements CraftingRecipe
 {
-    @Override
+	@Override
     public DefaultedList<ItemStack> getRemainingStacks(CraftingInventory inventory)
     {
         DefaultedList<ItemStack> defaultedList = DefaultedList.ofSize(inventory.size(), ItemStack.EMPTY);

@@ -40,6 +40,7 @@ public class VeggieWay implements ModInitializer
       
         VeggieWayLootTables.init();
     }
+   
     
     public static VeggieWayConfig getConfig()
     {
