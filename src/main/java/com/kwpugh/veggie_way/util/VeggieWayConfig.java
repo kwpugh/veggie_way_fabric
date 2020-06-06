@@ -9,7 +9,10 @@ import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 @Config(name=MOD_ID)
 public class VeggieWayConfig implements ConfigData
 {
-
+	@ConfigEntry.Gui.CollapsibleObject
+	@ConfigEntry.Gui.PrefixText
+	public RawFoods raw_foods = new RawFoods();
+	
 	@ConfigEntry.Gui.CollapsibleObject
 	@ConfigEntry.Gui.PrefixText
 	public Chunks chunks = new Chunks();
@@ -31,6 +34,29 @@ public class VeggieWayConfig implements ConfigData
 	public Misc misc = new Misc();
 
 
+	public static class RawFoods
+	{
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int corn_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float corn_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int quinoa_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float quinoa_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int soybean_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float soybean_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int lentil_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float lentil_saturation = 0.2F;
+	}
+	
 	public static class Chunks
 	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
@@ -133,6 +159,11 @@ public class VeggieWayConfig implements ConfigData
 		public int fried_egg_hunger = 3;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
 		public float fried_egg_saturation = 0.2F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int cooked_tofu_hunger = 4;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float cooked_tofu_saturation = 0.3F;
 	}
 
 }

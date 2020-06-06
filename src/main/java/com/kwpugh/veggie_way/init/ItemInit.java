@@ -48,7 +48,7 @@ public class ItemInit
 	public static final Item LARGE_BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "large_bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
-	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().food(FoodList.cooked_tofu).group(VeggieWay.veggie_way)));
 	public static final Item FRIED_EGG = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fried_egg"), new Item(new Item.Settings().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
 
 	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(512).group(VeggieWay.veggie_way)));
@@ -72,16 +72,16 @@ public class ItemInit
 	public static final ItemSuperPetals SUPER_PETALS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "super_petals"), new ItemSuperPetals(new Item.Settings().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
 
 	public static final ItemSeedQuinoa QUINOA_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "quinoa_seeds"), new ItemSeedQuinoa(BlockInit.PLANT_QUINOA, (new Item.Settings().group(VeggieWay.veggie_way))));
-	public static final ItemCropQuinoa QUINOA = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "quinoa"), new ItemCropQuinoa(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final ItemCropQuinoa QUINOA = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "quinoa"), new ItemCropQuinoa(new Item.Settings().food(FoodList.quinoa).group(VeggieWay.veggie_way)));
 
 	public static final ItemSeedSoybean SOYBEAN_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soybean_seeds"), new ItemSeedSoybean(BlockInit.PLANT_SOYBEAN, (new Item.Settings().group(VeggieWay.veggie_way))));
-	public static final ItemCropSoybean SOYBEAN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soybean"), new ItemCropSoybean(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final ItemCropSoybean SOYBEAN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soybean"), new ItemCropSoybean(new Item.Settings().food(FoodList.soybean).group(VeggieWay.veggie_way)));
 
 	public static final ItemSeedLentil LENTIL_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil_seeds"), new ItemSeedLentil(BlockInit.PLANT_LENTIL, (new Item.Settings().group(VeggieWay.veggie_way))));
-	public static final ItemCropLentil LENTIL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil"), new ItemCropLentil(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final ItemCropLentil LENTIL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil"), new ItemCropLentil(new Item.Settings().food(FoodList.lentil).group(VeggieWay.veggie_way)));
 
 	public static final ItemSeedCorn CORN_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn_seeds"), new ItemSeedCorn(BlockInit.PLANT_CORN, (new Item.Settings().group(VeggieWay.veggie_way))));
-	public static final ItemCropCorn CORN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn"), new ItemCropCorn(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final ItemCropCorn CORN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn"), new ItemCropCorn(new Item.Settings().food(FoodList.corn).group(VeggieWay.veggie_way)));
 
 	public static final ItemDryingAgent DRYING_AGENT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "drying_agent"), new ItemDryingAgent(new Item.Settings().group(VeggieWay.veggie_way)));
 

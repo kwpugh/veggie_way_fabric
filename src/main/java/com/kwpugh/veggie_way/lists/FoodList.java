@@ -59,6 +59,13 @@ public class FoodList
     static int superFoodHunger = VeggieWay.getConfig().super_foods.superFoodBar_hunger;
     static float superFoodSaturation = VeggieWay.getConfig().super_foods.superFoodBar_saturation;
 
+    public static FoodComponent quinoa = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
+    public static FoodComponent soybean = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
+    public static FoodComponent lentil = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
+    public static FoodComponent corn = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
+    
+    public static FoodComponent cooked_tofu = (new FoodComponent.Builder()).hunger(4).saturationModifier(0.4F).build();  
+    
     public static FoodComponent chocolate_bar = (new FoodComponent.Builder()).hunger(chocolateBarHunger).saturationModifier(chocolateBarSaturation).alwaysEdible().snack().build();
     public static FoodComponent fried_egg = (new FoodComponent.Builder()).hunger(friedEggHunger).saturationModifier(friedEggSaturation).alwaysEdible().snack().build();
     public static FoodComponent cactus_chunk = (new FoodComponent.Builder()).hunger(cactusChunkHunger).saturationModifier(cactusChunkSaturation).alwaysEdible().snack().build();
