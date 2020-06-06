@@ -2,7 +2,7 @@
   "required": true,
   "package": "com.kwpugh.veggie_way.mixins",
   "compatibilityLevel": "JAVA_8",
-  "mixins": ["RecipeRemainderVeggieWayMixin"],
+  "mixins": ["MyMixin"],
   "client": [],
   "server": [],
   "injectors": {

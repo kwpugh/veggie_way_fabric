@@ -19,11 +19,13 @@ repositories {
 	jcenter()
 }
 
-
+repositories {
+		mavenLocal()
+}
 
 
 dependencies {
-    	//to change the versions see the gradle.properties file
+    //to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
@@ -31,8 +33,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-
-        //Autoconfig
+    //Pughlib for common mixin
+    include "com.kwpugh:pugh_lib_fabric:1.0.0"
+    modImplementation "com.kwpugh:pugh_lib_fabric:1.0.0"
+    
+    //Autoconfig
   	modCompile "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
     include "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
 
