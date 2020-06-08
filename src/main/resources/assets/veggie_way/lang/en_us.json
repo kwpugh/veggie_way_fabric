@@ -1,15 +1,15 @@
 {	
-	"item.veggie_way.quinoa_plant": "Quinoa Plant",
-	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+	"item.veggie_way.plant_quinoa": "Quinoa Plant",
+	"block.veggie_way.plant_quinoa": "Quinoa Plant",
 
-	"item.veggie_way.soybean_plant": "Soybean Plant",
-	"block.veggie_way.soybean_plant": "Soybean Plant",
+	"item.veggie_way.plant_soybean": "Soybean Plant",
+	"block.veggie_way.plant_soybean": "Soybean Plant",
 
-	"item.veggie_way.lentil_plant": "Lentil Plant",
-	"block.veggie_way.lentil_plant": "Lentil Plant",
+	"item.veggie_way.plant_lentil": "Lentil Plant",
+	"block.veggie_way.plant_lentil": "Lentil Plant",
 	
-	"item.veggie_way.corn_plant": "Corn Plant",
-	"block.veggie_way.corn_plant": "Corn Plant",
+	"item.veggie_way.plant_corn": "Corn Plant",
+	"block.veggie_way.plant_corn": "Corn Plant",
 			
 	"item.veggie_way.hand_rake": "Hand Rake",
 	"item.veggie_way.hand_rake.line1": "Used on sand to get drying agent",

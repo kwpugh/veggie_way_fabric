@@ -34,8 +34,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     //Pughlib for common mixin
-    include "com.kwpugh:pugh_lib_fabric:1.0.0"
-    modImplementation "com.kwpugh:pugh_lib_fabric:1.0.0"
+    include "com.kwpugh:pugh_lib_fabric:1.0.1"
+    modImplementation "com.kwpugh:pugh_lib_fabric:1.0.1"
     
     //Autoconfig
   	modCompile "me.sargunvohra.mcmods:autoconfig1u:3.0.1-unstable"
