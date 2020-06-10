@@ -28,9 +28,7 @@ public class VeggieWayLootTables
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(QUINOA_SEEDS,
-				new Identifier("minecraft", "blocks/grass"),
-				new Identifier("minecraft", "blocks/grass_block"),
-				new Identifier("minecraft", "blocks/dirt")
+				new Identifier("minecraft", "blocks/grass")
 		));
 
 		FabricLootPoolBuilder SOYBEAN_SEEDS = FabricLootPoolBuilder.builder()
@@ -39,9 +37,7 @@ public class VeggieWayLootTables
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(SOYBEAN_SEEDS,
-				new Identifier("minecraft", "blocks/grass"),
-				new Identifier("minecraft", "blocks/grass_block"),
-				new Identifier("minecraft", "blocks/dirt")
+				new Identifier("minecraft", "blocks/grass")
 		));		
 		
 		FabricLootPoolBuilder LENTIL_SEEDS = FabricLootPoolBuilder.builder()
@@ -50,9 +46,7 @@ public class VeggieWayLootTables
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(LENTIL_SEEDS,
-				new Identifier("minecraft", "blocks/grass"),
-				new Identifier("minecraft", "blocks/grass_block"),
-				new Identifier("minecraft", "blocks/dirt")
+				new Identifier("minecraft", "blocks/grass")
 		));	
 		
 		FabricLootPoolBuilder CORN_SEEDS = FabricLootPoolBuilder.builder()
@@ -61,9 +55,7 @@ public class VeggieWayLootTables
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
 		insert(new LootTableInsert(CORN_SEEDS,
-				new Identifier("minecraft", "blocks/grass"),
-				new Identifier("minecraft", "blocks/grass_block"),
-				new Identifier("minecraft", "blocks/dirt")
+				new Identifier("minecraft", "blocks/grass")
 		));	
 		
 		FabricLootPoolBuilder DRYING_AGENT = FabricLootPoolBuilder.builder()
