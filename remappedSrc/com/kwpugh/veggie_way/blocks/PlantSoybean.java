@@ -31,8 +31,8 @@ public class PlantSoybean extends CropBlock
 
     @Environment(EnvType.CLIENT)
     @Override
-    public void buildTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) {
-        super.buildTooltip(stack, view, tooltip, options);
+    public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) {
+        super.appendTooltip(stack, view, tooltip, options);
         tooltip.add((new TranslatableText("block.veggie_way.soybean_plant").formatted(Formatting.GREEN)));
     }
 }
