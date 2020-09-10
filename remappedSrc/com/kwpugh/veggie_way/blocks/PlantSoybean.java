@@ -20,10 +20,7 @@ public class PlantSoybean extends CropBlock
     {
         super(builder);
     }
-
-
     
-
     @Environment(EnvType.CLIENT)
     protected ItemConvertible getSeedsItem() {
         return ItemInit.SOYBEAN_SEEDS;

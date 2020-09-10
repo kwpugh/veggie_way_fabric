@@ -39,8 +39,7 @@ public class VeggieWay implements ModInitializer
         Compostables.init();
       
         VeggieWayLootTables.init();
-    }
-   
+    }  
     
     public static VeggieWayConfig getConfig()
     {
