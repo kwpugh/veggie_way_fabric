@@ -67,8 +67,7 @@ public class VeggieWayLootTables
 				new Identifier("minecraft", "blocks/sand")
 		));	
 		
-		
-		
+				
 		// Perform Callback insertion
 		LootTableLoadingCallback.EVENT.register(((resourceManager, lootManager, identifier, supplier, lootTableSetter) -> {
 			INSERTS.forEach(i->{

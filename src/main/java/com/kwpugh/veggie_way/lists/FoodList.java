@@ -5,6 +5,12 @@ import net.minecraft.item.FoodComponent;
 
 public class FoodList
 {
+    static int freshTofuHunger = VeggieWay.getConfig().tofu.fresh_tofu_hunger;
+    static float freshTofuSaturation = VeggieWay.getConfig().tofu.fresh_tofu_saturation;
+ 
+    static int cookedTofuHunger = VeggieWay.getConfig().tofu.cooked_tofu_hunger;
+    static float cookedTofuSaturation = VeggieWay.getConfig().tofu.cooked_tofu_saturation;
+    
     static int friedEggHunger = VeggieWay.getConfig().misc.fried_egg_hunger;
     static float friedEggSaturation = VeggieWay.getConfig().misc.fried_egg_saturation;
     
@@ -64,7 +70,8 @@ public class FoodList
     public static FoodComponent lentil = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
     public static FoodComponent corn = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
     
-    public static FoodComponent cooked_tofu = (new FoodComponent.Builder()).hunger(4).saturationModifier(0.4F).build();  
+    public static FoodComponent fresh_tofu = (new FoodComponent.Builder()).hunger(freshTofuHunger).saturationModifier(freshTofuSaturation).build();
+    public static FoodComponent cooked_tofu = (new FoodComponent.Builder()).hunger(cookedTofuHunger).saturationModifier(cookedTofuSaturation).build();  
     
     public static FoodComponent chocolate_bar = (new FoodComponent.Builder()).hunger(chocolateBarHunger).saturationModifier(chocolateBarSaturation).alwaysEdible().snack().build();
     public static FoodComponent fried_egg = (new FoodComponent.Builder()).hunger(friedEggHunger).saturationModifier(friedEggSaturation).alwaysEdible().snack().build();
