@@ -10,6 +10,10 @@ public class VeggieWayConfig implements ConfigData
 {
 	@ConfigEntry.Gui.CollapsibleObject
 	@ConfigEntry.Gui.PrefixText
+	public Tofu tofu = new Tofu();
+	
+	@ConfigEntry.Gui.CollapsibleObject
+	@ConfigEntry.Gui.PrefixText
 	public RawFoods raw_foods = new RawFoods();
 	
 	@ConfigEntry.Gui.CollapsibleObject
@@ -32,7 +36,19 @@ public class VeggieWayConfig implements ConfigData
 	@ConfigEntry.Gui.PrefixText
 	public Misc misc = new Misc();
 
-
+	public static class Tofu
+	{
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int fresh_tofu_hunger = 3;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float fresh_tofu_saturation = 0.3F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int cooked_tofu_hunger = 4;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float cooked_tofu_saturation = 0.4F;
+	}
+	
 	public static class RawFoods
 	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
@@ -147,8 +163,9 @@ public class VeggieWayConfig implements ConfigData
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
 		public float superFoodBar_saturation = 0.8F;
 	}
-	public static class Misc {
-
+	
+	public static class Misc
+	{
 		@ConfigEntry.BoundedDiscrete(min=0,max=30)
 		public int chocolate_bar_hunger = 4;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
@@ -164,5 +181,4 @@ public class VeggieWayConfig implements ConfigData
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
 		public float cooked_tofu_saturation = 0.3F;
 	}
-
 }
