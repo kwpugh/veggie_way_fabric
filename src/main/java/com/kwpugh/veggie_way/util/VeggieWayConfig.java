@@ -15,6 +15,10 @@ public class VeggieWayConfig implements ConfigData
 	
 	@ConfigEntry.Gui.CollapsibleObject
 	@ConfigEntry.Gui.PrefixText
+	public CookedCarrotBeet cooked_carrot_beet = new CookedCarrotBeet();
+	
+	@ConfigEntry.Gui.CollapsibleObject
+	@ConfigEntry.Gui.PrefixText
 	public RawFoods raw_foods = new RawFoods();
 	
 	@ConfigEntry.Gui.CollapsibleObject
@@ -48,6 +52,19 @@ public class VeggieWayConfig implements ConfigData
 		public int cooked_tofu_hunger = 4;
 		@ConfigEntry.BoundedDiscrete(min=0,max=10)
 		public float cooked_tofu_saturation = 0.4F;
+	}
+
+	public static class CookedCarrotBeet
+	{
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int cooked_carrot_hunger = 4;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float cooked_carrot_saturation = 0.8F;
+		
+		@ConfigEntry.BoundedDiscrete(min=0,max=30)
+		public int cooked_beetroot_hunger = 2;
+		@ConfigEntry.BoundedDiscrete(min=0,max=10)
+		public float cooked_beetroot_saturation = 0.8F;
 	}
 	
 	public static class RawFoods

@@ -50,6 +50,9 @@ public class ItemInit
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().food(FoodList.fresh_tofu).group(VeggieWay.veggie_way)));
 	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().food(FoodList.cooked_tofu).group(VeggieWay.veggie_way)));
 	public static final Item FRIED_EGG = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fried_egg"), new Item(new Item.Settings().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
+	
+	public static final Item COOKED_CARROT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_carrot"), new Item(new Item.Settings().food(FoodList.cooked_carrot).group(VeggieWay.veggie_way)));
+	public static final Item COOKED_BEETROOT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_beetroot"), new Item(new Item.Settings().food(FoodList.cooked_beetroot).group(VeggieWay.veggie_way)));
 
 	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(512).group(VeggieWay.veggie_way)));
 	public static final ItemFlour FLOUR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "flour"), new ItemFlour(new Item.Settings().group(VeggieWay.veggie_way)));
