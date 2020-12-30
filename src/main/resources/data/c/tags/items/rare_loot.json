@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+  	"minecraft:netherite_scrap",
+  	"minecraft:prismarine_shard",
+  	"minecraft:prismarine_crystals",
+  	"minecraft:nautilus_shell"
+  ]
+}
