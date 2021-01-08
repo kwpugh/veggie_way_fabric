@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "required":false,
+  "values": [
+   "veggie_way:corn_seeds",
+   "veggie_way:lentil_seeds",
+   "veggie_way:quinoa_seeds",
+   "veggie_way:soybean_seeds"
+  ]
+}

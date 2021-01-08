@@ -23,13 +23,15 @@ public class PlantQuinoa extends CropBlock
     }
 
     @Environment(EnvType.CLIENT)
-    protected ItemConvertible getSeedsItem() {
+    protected ItemConvertible getSeedsItem() 
+    {
         return ItemInit.QUINOA_SEEDS;
     }
 
     @Environment(EnvType.CLIENT)
     @Override
-    public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) {
+    public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) 
+    {
         super.appendTooltip(stack, view, tooltip, options);
         tooltip.add((new TranslatableText("block.veggie_way.quinoa_plant").formatted(Formatting.GREEN)));
     }
