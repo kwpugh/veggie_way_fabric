@@ -4,11 +4,11 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.kwpugh.veggie_way.config.VeggieWayConfig;
 import com.kwpugh.veggie_way.init.BlockInit;
 import com.kwpugh.veggie_way.init.Compostables;
 import com.kwpugh.veggie_way.init.ItemInit;
-import com.kwpugh.veggie_way.util.VeggieWayConfig;
-import com.kwpugh.veggie_way.util.VeggieWayLootTables;
+import com.kwpugh.veggie_way.init.LootInit;
 
 import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
 import me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer;
@@ -22,7 +22,6 @@ import net.minecraft.util.Identifier;
 public class VeggieWay implements ModInitializer 
 {
     public static Logger LOGGER = LogManager.getLogger();
-
     public static final String MOD_ID = "veggie_way";
     public static final String MOD_NAME = "The Veggie Way";
     public static ItemGroup veggie_way = FabricItemGroupBuilder.create(new Identifier(MOD_ID,"veggie_way")).icon(()->new ItemStack(Items.CARROT)).build();
@@ -32,13 +31,10 @@ public class VeggieWay implements ModInitializer
     {
         log(Level.INFO, " VeggieWay Initializing");
         AutoConfig.register(VeggieWayConfig.class, GsonConfigSerializer::new);
-
         BlockInit.init();
         ItemInit.init();
-         
         Compostables.init();
-      
-        VeggieWayLootTables.init();
+        LootInit.init();
     }  
     
     public static VeggieWayConfig getConfig()
@@ -46,7 +42,8 @@ public class VeggieWay implements ModInitializer
         return AutoConfig.getConfigHolder(VeggieWayConfig.class).getConfig();
     }
     
-    public static void log(Level level, String message){
+    public static void log(Level level, String message)
+    {
         LOGGER.log(level, "["+MOD_NAME+"] " + message);
     }
 

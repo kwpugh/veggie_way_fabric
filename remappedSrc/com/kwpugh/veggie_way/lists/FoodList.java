@@ -11,6 +11,12 @@ public class FoodList
     static int cookedTofuHunger = VeggieWay.getConfig().tofu.cooked_tofu_hunger;
     static float cookedTofuSaturation = VeggieWay.getConfig().tofu.cooked_tofu_saturation;
     
+    static int cookedCarrotHunger = VeggieWay.getConfig().cooked_carrot_beet.cooked_carrot_hunger;
+    static float cookedCarrotSaturation = VeggieWay.getConfig().cooked_carrot_beet.cooked_carrot_saturation;
+   
+    static int cookedBeetrootHunger = VeggieWay.getConfig().cooked_carrot_beet.cooked_beetroot_hunger;
+    static float cookedBeetrootSaturation = VeggieWay.getConfig().cooked_carrot_beet.cooked_beetroot_saturation;
+    
     static int friedEggHunger = VeggieWay.getConfig().misc.fried_egg_hunger;
     static float friedEggSaturation = VeggieWay.getConfig().misc.fried_egg_saturation;
     
@@ -72,6 +78,9 @@ public class FoodList
     
     public static FoodComponent fresh_tofu = (new FoodComponent.Builder()).hunger(freshTofuHunger).saturationModifier(freshTofuSaturation).build();
     public static FoodComponent cooked_tofu = (new FoodComponent.Builder()).hunger(cookedTofuHunger).saturationModifier(cookedTofuSaturation).build();  
+    
+    public static FoodComponent cooked_carrot = (new FoodComponent.Builder()).hunger(cookedCarrotHunger).saturationModifier(cookedCarrotSaturation).build();
+    public static FoodComponent cooked_beetroot = (new FoodComponent.Builder()).hunger(cookedBeetrootHunger).saturationModifier(cookedBeetrootSaturation).build();
     
     public static FoodComponent chocolate_bar = (new FoodComponent.Builder()).hunger(chocolateBarHunger).saturationModifier(chocolateBarSaturation).alwaysEdible().snack().build();
     public static FoodComponent fried_egg = (new FoodComponent.Builder()).hunger(friedEggHunger).saturationModifier(friedEggSaturation).alwaysEdible().snack().build();

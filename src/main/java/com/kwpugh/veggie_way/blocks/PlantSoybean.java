@@ -22,7 +22,8 @@ public class PlantSoybean extends CropBlock
     }
     
     @Environment(EnvType.CLIENT)
-    protected ItemConvertible getSeedsItem()
+    @Override
+    public ItemConvertible getSeedsItem()
     {
         return ItemInit.SOYBEAN_SEEDS;
     }

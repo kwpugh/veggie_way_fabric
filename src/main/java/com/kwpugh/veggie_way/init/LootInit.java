@@ -1,11 +1,10 @@
-package com.kwpugh.veggie_way.util;
+package com.kwpugh.veggie_way.init;
 
 import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
 
 import com.google.common.collect.Lists;
-import com.kwpugh.veggie_way.init.ItemInit;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.FabricLootSupplierBuilder;
@@ -15,7 +14,7 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.Identifier;
 
-public class VeggieWayLootTables
+public class LootInit
 {
 	private static final List<LootTableInsert> INSERTS = Lists.newArrayList();
 
