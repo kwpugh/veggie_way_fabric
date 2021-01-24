@@ -9,9 +9,10 @@ import com.google.common.collect.Lists;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.FabricLootSupplierBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.minecraft.loot.ConstantLootTableRange;
+
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class LootInit
@@ -22,7 +23,7 @@ public class LootInit
 	public static void init()
 	{	
 		FabricLootPoolBuilder QUINOA_SEEDS = FabricLootPoolBuilder.builder()
-				.rolls(ConstantLootTableRange.create(1))
+				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.QUINOA_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
@@ -31,7 +32,7 @@ public class LootInit
 		));
 
 		FabricLootPoolBuilder SOYBEAN_SEEDS = FabricLootPoolBuilder.builder()
-				.rolls(ConstantLootTableRange.create(1))
+				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.SOYBEAN_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
@@ -40,7 +41,7 @@ public class LootInit
 		));		
 		
 		FabricLootPoolBuilder LENTIL_SEEDS = FabricLootPoolBuilder.builder()
-				.rolls(ConstantLootTableRange.create(1))
+				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.LENTIL_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
@@ -49,7 +50,7 @@ public class LootInit
 		));	
 		
 		FabricLootPoolBuilder CORN_SEEDS = FabricLootPoolBuilder.builder()
-				.rolls(ConstantLootTableRange.create(1))
+				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.CORN_SEEDS))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
@@ -58,7 +59,7 @@ public class LootInit
 		));	
 		
 		FabricLootPoolBuilder DRYING_AGENT = FabricLootPoolBuilder.builder()
-				.rolls(ConstantLootTableRange.create(1))
+				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.DRYING_AGENT))
 				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
 
