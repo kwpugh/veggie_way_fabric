@@ -5,71 +5,71 @@ import net.minecraft.item.FoodComponent;
 
 public class FoodList
 {
-    static int freshTofuHunger = VeggieWay.getConfig().tofu.fresh_tofu_hunger;
-    static float freshTofuSaturation = VeggieWay.getConfig().tofu.fresh_tofu_saturation;
+    static int freshTofuHunger = VeggieWay.CONFIG.GENERAL.fresh_tofu_hunger;
+    static float freshTofuSaturation = VeggieWay.CONFIG.GENERAL.fresh_tofu_saturation;
  
-    static int cookedTofuHunger = VeggieWay.getConfig().tofu.cooked_tofu_hunger;
-    static float cookedTofuSaturation = VeggieWay.getConfig().tofu.cooked_tofu_saturation;
+    static int cookedTofuHunger = VeggieWay.CONFIG.GENERAL.cooked_tofu_hunger;
+    static float cookedTofuSaturation = VeggieWay.CONFIG.GENERAL.cooked_tofu_saturation;
     
-    static int cookedCarrotHunger = VeggieWay.getConfig().cooked_carrot_beet.cooked_carrot_hunger;
-    static float cookedCarrotSaturation = VeggieWay.getConfig().cooked_carrot_beet.cooked_carrot_saturation;
+    static int cookedCarrotHunger = VeggieWay.CONFIG.GENERAL.cooked_carrot_hunger;
+    static float cookedCarrotSaturation = VeggieWay.CONFIG.GENERAL.cooked_carrot_saturation;
    
-    static int cookedBeetrootHunger = VeggieWay.getConfig().cooked_carrot_beet.cooked_beetroot_hunger;
-    static float cookedBeetrootSaturation = VeggieWay.getConfig().cooked_carrot_beet.cooked_beetroot_saturation;
+    static int cookedBeetrootHunger = VeggieWay.CONFIG.GENERAL.cooked_beetroot_hunger;
+    static float cookedBeetrootSaturation = VeggieWay.CONFIG.GENERAL.cooked_beetroot_saturation;
     
-    static int friedEggHunger = VeggieWay.getConfig().misc.fried_egg_hunger;
-    static float friedEggSaturation = VeggieWay.getConfig().misc.fried_egg_saturation;
+    static int friedEggHunger = VeggieWay.CONFIG.GENERAL.fried_egg_hunger;
+    static float friedEggSaturation = VeggieWay.CONFIG.GENERAL.fried_egg_saturation;
     
-    static int chocolateBarHunger = VeggieWay.getConfig().misc.chocolate_bar_hunger;
-    static float chocolateBarSaturation = VeggieWay.getConfig().misc.chocolate_bar_saturation;
+    static int chocolateBarHunger = VeggieWay.CONFIG.GENERAL.chocolate_bar_hunger;
+    static float chocolateBarSaturation = VeggieWay.CONFIG.GENERAL.chocolate_bar_saturation;
 
-    static int cactusChunkHunger = VeggieWay.getConfig().chunks.cactus_chunk_hunger;
-    static float cactusChunkSaturation = VeggieWay.getConfig().chunks.cactus_chunk_saturation;
+    static int cactusChunkHunger = VeggieWay.CONFIG.GENERAL.cactus_chunk_hunger;
+    static float cactusChunkSaturation = VeggieWay.CONFIG.GENERAL.cactus_chunk_saturation;
 
-    static int melonChunkHunger = VeggieWay.getConfig().chunks.melon_chunk_hunger;
-    static float melonChunkSaturation = VeggieWay.getConfig().chunks.melon_chunk_saturation;
+    static int melonChunkHunger = VeggieWay.CONFIG.GENERAL.melon_chunk_hunger;
+    static float melonChunkSaturation = VeggieWay.CONFIG.GENERAL.melon_chunk_saturation;
 
-    static int pumpkinChunkHunger = VeggieWay.getConfig().chunks.pumpkin_chunk_hunger;
-    static float pumpkinChunkSaturation = VeggieWay.getConfig().chunks.pumpkin_chunk_saturation;
+    static int pumpkinChunkHunger = VeggieWay.CONFIG.GENERAL.pumpkin_chunk_hunger;
+    static float pumpkinChunkSaturation = VeggieWay.CONFIG.GENERAL.pumpkin_chunk_saturation;
 
-    static int applePieHunger = VeggieWay.getConfig().pies.apple_pie_hunger;
-    static float applePieSaturation = VeggieWay.getConfig().pies.apple_pie_saturation;
+    static int applePieHunger = VeggieWay.CONFIG.GENERAL.apple_pie_hunger;
+    static float applePieSaturation = VeggieWay.CONFIG.GENERAL.apple_pie_saturation;
 
-    static int melonPieHunger = VeggieWay.getConfig().pies.melon_pie_hunger;
-    static float melonPieSaturation = VeggieWay.getConfig().pies.melon_pie_saturation;
+    static int melonPieHunger = VeggieWay.CONFIG.GENERAL.melon_pie_hunger;
+    static float melonPieSaturation = VeggieWay.CONFIG.GENERAL.melon_pie_saturation;
 
-    static int berryPieHunger = VeggieWay.getConfig().pies.berry_pie_hunger;
-    static float berryPieSaturation = VeggieWay.getConfig().pies.berry_pie_saturation;
+    static int berryPieHunger = VeggieWay.CONFIG.GENERAL.berry_pie_hunger;
+    static float berryPieSaturation = VeggieWay.CONFIG.GENERAL.berry_pie_saturation;
 
-    static int pumpkinSoupHunger = VeggieWay.getConfig().soups.pumpkin_soup_hunger;
-    static float pumpkinSoupSaturation = VeggieWay.getConfig().soups.pumpkin_soup_saturation;
+    static int pumpkinSoupHunger = VeggieWay.CONFIG.GENERAL.pumpkin_soup_hunger;
+    static float pumpkinSoupSaturation = VeggieWay.CONFIG.GENERAL.pumpkin_soup_saturation;
 
-    static int melonSoupHunger = VeggieWay.getConfig().soups.melon_soup_hunger;
-    static float melonSoupSaturation = VeggieWay.getConfig().soups.cactus_soup_saturation;
+    static int melonSoupHunger = VeggieWay.CONFIG.GENERAL.melon_soup_hunger;
+    static float melonSoupSaturation = VeggieWay.CONFIG.GENERAL.cactus_soup_saturation;
 
-    static int cactusSoupHunger = VeggieWay.getConfig().soups.cactus_soup_hunger;
-    static float cactusSoupSaturation = VeggieWay.getConfig().soups.cactus_soup_saturation;
+    static int cactusSoupHunger = VeggieWay.CONFIG.GENERAL.cactus_soup_hunger;
+    static float cactusSoupSaturation = VeggieWay.CONFIG.GENERAL.cactus_soup_saturation;
 
-    static int carrotSoupHunger = VeggieWay.getConfig().soups.carrot_soup_hunger;
-    static float carrotSoupSaturation = VeggieWay.getConfig().soups.carrot_soup_saturation;
+    static int carrotSoupHunger = VeggieWay.CONFIG.GENERAL.carrot_soup_hunger;
+    static float carrotSoupSaturation = VeggieWay.CONFIG.GENERAL.carrot_soup_saturation;
 
-    static int superPetalsHunger = VeggieWay.getConfig().super_foods.super_petals_hunger;
-    static float superPetalsSaturation = VeggieWay.getConfig().super_foods.super_petals_saturation;
+    static int superPetalsHunger = VeggieWay.CONFIG.GENERAL.super_petals_hunger;
+    static float superPetalsSaturation = VeggieWay.CONFIG.GENERAL.super_petals_saturation;
 
-    static int energyDrinkHunger = VeggieWay.getConfig().super_foods.energy_drink_hunger;
-    static float energyDrinkSaturation = VeggieWay.getConfig().super_foods.energy_drink_saturation;
+    static int energyDrinkHunger = VeggieWay.CONFIG.GENERAL.energy_drink_hunger;
+    static float energyDrinkSaturation = VeggieWay.CONFIG.GENERAL.energy_drink_saturation;
 
-    static int shakeHunger = VeggieWay.getConfig().super_foods.shake_hunger;
-    static float shakeSaturation = VeggieWay.getConfig().super_foods.shake_saturation;
+    static int shakeHunger = VeggieWay.CONFIG.GENERAL.shake_hunger;
+    static float shakeSaturation = VeggieWay.CONFIG.GENERAL.shake_saturation;
 
-    static int smoothieHunger = VeggieWay.getConfig().super_foods.smoothie_hunger;
-    static float smoothieSaturation = VeggieWay.getConfig().super_foods.smoothie_saturation;
+    static int smoothieHunger = VeggieWay.CONFIG.GENERAL.smoothie_hunger;
+    static float smoothieSaturation = VeggieWay.CONFIG.GENERAL.smoothie_saturation;
 
-    static int energyBarHunger = VeggieWay.getConfig().super_foods.energyBar_hunger;
-    static float energyBarSaturation = VeggieWay.getConfig().super_foods.energyBar_saturation;
+    static int energyBarHunger = VeggieWay.CONFIG.GENERAL.energyBar_hunger;
+    static float energyBarSaturation = VeggieWay.CONFIG.GENERAL.energyBar_saturation;
 
-    static int superFoodHunger = VeggieWay.getConfig().super_foods.superFoodBar_hunger;
-    static float superFoodSaturation = VeggieWay.getConfig().super_foods.superFoodBar_saturation;
+    static int superFoodHunger = VeggieWay.CONFIG.GENERAL.superFoodBar_hunger;
+    static float superFoodSaturation = VeggieWay.CONFIG.GENERAL.superFoodBar_saturation;
 
     public static FoodComponent quinoa = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
     public static FoodComponent soybean = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();

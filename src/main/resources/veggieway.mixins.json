@@ -2,7 +2,9 @@
   "required": true,
   "package": "com.kwpugh.veggie_way.mixins",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [],
+  "mixins": [
+
+  ],
   "client": [],
   "server": [],
   "injectors": {

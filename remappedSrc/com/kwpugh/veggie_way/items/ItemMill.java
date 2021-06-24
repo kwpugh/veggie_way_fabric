@@ -14,6 +14,7 @@ import java.util.List;
 import com.kwpugh.pugh_lib.api.CustomRecipeRemainder;
 
 public class ItemMill extends Item implements CustomRecipeRemainder
+//public class ItemMill extends CraftingItem
 {
 	public ItemMill(Settings properties)
 	{
@@ -28,7 +29,7 @@ public class ItemMill extends Item implements CustomRecipeRemainder
 
     @Override
     public ItemStack getRecipeRemainder(ItemStack stackIn)
-    {	
+    {
     	ItemStack stack = stackIn.copy();
     	stack.setDamage(stack.getDamage() + 1);
 
@@ -36,8 +37,8 @@ public class ItemMill extends Item implements CustomRecipeRemainder
     	{
     		stack.decrement(1);
     	}
-    	
-        return stack;    
+
+        return stack;
     }
     
 	@Override
