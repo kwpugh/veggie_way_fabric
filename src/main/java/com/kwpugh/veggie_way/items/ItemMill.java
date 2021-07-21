@@ -1,6 +1,5 @@
 package com.kwpugh.veggie_way.items;
 
-
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,7 +13,6 @@ import java.util.List;
 import com.kwpugh.pugh_lib.api.CustomRecipeRemainder;
 
 public class ItemMill extends Item implements CustomRecipeRemainder
-//public class ItemMill extends CraftingItem
 {
 	public ItemMill(Settings properties)
 	{

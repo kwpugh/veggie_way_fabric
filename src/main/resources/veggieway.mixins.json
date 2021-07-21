@@ -1,9 +1,9 @@
 {
   "required": true,
-  "package": "com.kwpugh.veggie_way.mixins",
+  "package": "com.kwpugh.veggie_way.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-
+      "FallingBlockEntityMixin"
   ],
   "client": [],
   "server": [],

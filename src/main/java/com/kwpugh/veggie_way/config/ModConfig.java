@@ -14,8 +14,8 @@ public class ModConfig extends PartitioningSerializer.GlobalData
     public static class General implements ConfigData
     {
         @Comment("***********************"
-                +"\nGeneral Settings"
-                +"\n***********************")
+                + "\nGeneral Settings"
+                + "\n***********************")
         public int fresh_tofu_hunger = 3;
         public float fresh_tofu_saturation = 0.3F;
         public int cooked_tofu_hunger = 4;
@@ -68,6 +68,12 @@ public class ModConfig extends PartitioningSerializer.GlobalData
         public float chocolate_bar_saturation = 0.2F;
         public int fried_egg_hunger = 3;
         public float fried_egg_saturation = 0.2F;
+
+        @Comment("***********************"
+                + "\nDrying Agent"
+                + "\nranges from 0.0 - 1.0"
+                + "\n***********************")
+        public float chanceSandOnTorch = .4F;
     }
 }
 

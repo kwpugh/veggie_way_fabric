@@ -45,7 +45,7 @@ public class FoodList
     static float pumpkinSoupSaturation = VeggieWay.CONFIG.GENERAL.pumpkin_soup_saturation;
 
     static int melonSoupHunger = VeggieWay.CONFIG.GENERAL.melon_soup_hunger;
-    static float melonSoupSaturation = VeggieWay.CONFIG.GENERAL.cactus_soup_saturation;
+    static float melonSoupSaturation = VeggieWay.CONFIG.GENERAL.melon_soup_saturation;
 
     static int cactusSoupHunger = VeggieWay.CONFIG.GENERAL.cactus_soup_hunger;
     static float cactusSoupSaturation = VeggieWay.CONFIG.GENERAL.cactus_soup_saturation;
@@ -71,10 +71,22 @@ public class FoodList
     static int superFoodHunger = VeggieWay.CONFIG.GENERAL.superFoodBar_hunger;
     static float superFoodSaturation = VeggieWay.CONFIG.GENERAL.superFoodBar_saturation;
 
-    public static FoodComponent quinoa = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
-    public static FoodComponent soybean = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
-    public static FoodComponent lentil = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
-    public static FoodComponent corn = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.3F).build();
+    static int quinoaHunger = VeggieWay.CONFIG.GENERAL.quinoa_hunger;
+    static float quinoaSaturation = VeggieWay.CONFIG.GENERAL.quinoa_saturation;
+
+    static int soybeanHunger = VeggieWay.CONFIG.GENERAL.soybean_hunger;
+    static float soybeanSaturation = VeggieWay.CONFIG.GENERAL.soybean_saturation;
+
+    static int lentilHunger = VeggieWay.CONFIG.GENERAL.lentil_hunger;
+    static float lentilSaturation = VeggieWay.CONFIG.GENERAL.lentil_saturation;
+
+    static int cornHunger = VeggieWay.CONFIG.GENERAL.corn_hunger;
+    static float cornSaturation = VeggieWay.CONFIG.GENERAL.corn_saturation;
+
+    public static FoodComponent quinoa = (new FoodComponent.Builder()).hunger(quinoaHunger).saturationModifier(quinoaSaturation).build();
+    public static FoodComponent soybean = (new FoodComponent.Builder()).hunger(soybeanHunger).saturationModifier(soybeanSaturation).build();
+    public static FoodComponent lentil = (new FoodComponent.Builder()).hunger(lentilHunger).saturationModifier(lentilSaturation).build();
+    public static FoodComponent corn = (new FoodComponent.Builder()).hunger(cornHunger).saturationModifier(cornSaturation).build();
     
     public static FoodComponent fresh_tofu = (new FoodComponent.Builder()).hunger(freshTofuHunger).saturationModifier(freshTofuSaturation).build();
     public static FoodComponent cooked_tofu = (new FoodComponent.Builder()).hunger(cookedTofuHunger).saturationModifier(cookedTofuSaturation).build();  

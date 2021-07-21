@@ -2,6 +2,7 @@ package com.kwpugh.veggie_way.init;
 
 import java.util.List;
 
+import com.kwpugh.veggie_way.VeggieWay;
 import org.apache.commons.lang3.ArrayUtils;
 
 import com.google.common.collect.Lists;
@@ -18,7 +19,6 @@ import net.minecraft.util.Identifier;
 public class LootInit
 {
 	private static final List<LootTableInsert> INSERTS = Lists.newArrayList();
-
 
 	public static void init()
 	{	
@@ -61,7 +61,7 @@ public class LootInit
 		FabricLootPoolBuilder DRYING_AGENT = FabricLootPoolBuilder.builder()
 				.rolls(ConstantLootNumberProvider.create(1))
 				.with(ItemEntry.builder(ItemInit.DRYING_AGENT))
-				.withCondition(RandomChanceLootCondition.builder(0.03F).build());
+				.withCondition(RandomChanceLootCondition.builder(.12F).build());
 
 		insert(new LootTableInsert(DRYING_AGENT,
 				new Identifier("minecraft", "blocks/sand")

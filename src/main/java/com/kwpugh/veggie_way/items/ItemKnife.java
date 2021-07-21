@@ -1,6 +1,5 @@
 package com.kwpugh.veggie_way.items;
 
-
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

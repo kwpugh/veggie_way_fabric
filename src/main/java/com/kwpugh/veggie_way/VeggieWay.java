@@ -23,7 +23,6 @@ import net.minecraft.util.Identifier;
 
 public class VeggieWay implements ModInitializer 
 {
-    public static final VeggieWay INSTANCE = new VeggieWay();
     public static Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "veggie_way";
     public static final String MOD_NAME = "The Veggie Way";
@@ -34,17 +33,11 @@ public class VeggieWay implements ModInitializer
     public void onInitialize()
     {
         log(Level.INFO, " VeggieWay Initializing");
-        //AutoConfig.register(VeggieWayConfig.class, GsonConfigSerializer::new);
         BlockInit.init();
         ItemInit.init();
         Compostables.init();
         LootInit.init();
-    }  
-    
-//    public static VeggieWayConfig getConfig()
-//    {
-//        return AutoConfig.getConfigHolder(VeggieWayConfig.class).getConfig();
-//    }
+    }
     
     public static void log(Level level, String message)
     {
