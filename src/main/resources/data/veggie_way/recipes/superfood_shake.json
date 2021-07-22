@@ -1,23 +1,18 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "ABA",
-        "BCB",
-        "ABA"
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "minecraft:glass_bottle"
         },
-        "B": {
+        {
             "item": "veggie_way:superfood_powder"
         },
-        "C": {
-            "item": "minecraft:milk_bucket"
+        {
+            "tag": "c:milks"
         }
-    },
+    ],
     "result": {
-        "item": "veggie_way:superfood_shake",
-        "count": 4
+        "item":  "veggie_way:superfood_shake",
+        "count": 1
     }
 }

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+  [
+    "minecraft:milk_bucket",
+    "veggie_way:soy_milk_cooked_bucket"
+  ]
+}

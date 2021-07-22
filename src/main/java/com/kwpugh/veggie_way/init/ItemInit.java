@@ -3,34 +3,7 @@ package com.kwpugh.veggie_way.init;
 import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 
 import com.kwpugh.veggie_way.VeggieWay;
-import com.kwpugh.veggie_way.items.DrinkBase;
-import com.kwpugh.veggie_way.items.ItemCactusChunk;
-import com.kwpugh.veggie_way.items.ItemCaffeine;
-import com.kwpugh.veggie_way.items.ItemCarbs;
-import com.kwpugh.veggie_way.items.ItemCropCorn;
-import com.kwpugh.veggie_way.items.ItemCropLentil;
-import com.kwpugh.veggie_way.items.ItemCropQuinoa;
-import com.kwpugh.veggie_way.items.ItemCropSoybean;
-import com.kwpugh.veggie_way.items.ItemDough;
-import com.kwpugh.veggie_way.items.ItemDryingAgent;
-import com.kwpugh.veggie_way.items.ItemEnergyPowder;
-import com.kwpugh.veggie_way.items.ItemFlour;
-import com.kwpugh.veggie_way.items.ItemFructose;
-import com.kwpugh.veggie_way.items.ItemHandRake;
-import com.kwpugh.veggie_way.items.ItemHandScraper;
-import com.kwpugh.veggie_way.items.ItemKnife;
-import com.kwpugh.veggie_way.items.ItemMelonChunk;
-import com.kwpugh.veggie_way.items.ItemMill;
-import com.kwpugh.veggie_way.items.ItemProteins;
-import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
-import com.kwpugh.veggie_way.items.ItemSeedCorn;
-import com.kwpugh.veggie_way.items.ItemSeedLentil;
-import com.kwpugh.veggie_way.items.ItemSeedQuinoa;
-import com.kwpugh.veggie_way.items.ItemSeedSoybean;
-import com.kwpugh.veggie_way.items.ItemSuperPetals;
-import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
-import com.kwpugh.veggie_way.items.ItemVitamins;
-import com.kwpugh.veggie_way.items.ItemWheatgerm;
+import com.kwpugh.veggie_way.items.*;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.item.Item;
@@ -49,6 +22,9 @@ public class ItemInit
 
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().food(FoodList.fresh_tofu).group(VeggieWay.veggie_way)));
 	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().food(FoodList.cooked_tofu).group(VeggieWay.veggie_way)));
+	public static final Item SOY_MILK_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soy_milk_bucket"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
+	public static final ItemCookedSoyBucket SOY_MILK_COOKED_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soy_milk_cooked_bucket"), new ItemCookedSoyBucket(new Item.Settings().maxDamage(16).group(VeggieWay.veggie_way)));
+
 	public static final Item FRIED_EGG = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fried_egg"), new Item(new Item.Settings().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
 	
 	public static final Item COOKED_CARROT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_carrot"), new Item(new Item.Settings().food(FoodList.cooked_carrot).group(VeggieWay.veggie_way)));

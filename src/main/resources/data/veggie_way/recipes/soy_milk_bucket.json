@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "ABA",
+    " A "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "tag": "minecraft:planks"
+    },
+    "B":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "C":
+    {
+      "item": "veggie_way:fresh_tofu"
+    }
+  },
+
+  "result":
+  {
+    "item": "veggie_way:soy_milk_bucket",
+    "count": 1
+  }
+}

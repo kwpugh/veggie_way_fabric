@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "veggie_way:soy_milk_bucket"
+  },
+  "result": "veggie_way:soy_milk_cooked_bucket",
+  "experience": 0.50,
+  "cookingtime": 100
+}

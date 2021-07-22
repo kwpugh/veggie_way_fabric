@@ -11,7 +11,7 @@
             "tag": "c:flour"
         },
         {
-            "item": "minecraft:milk_bucket"
+            "tag": "c:milks"
         }
     ],
     "result": {
