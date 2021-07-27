@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "veggie_way:hand_rake"
+    },
+    {
+      "item": "veggie_way:hand_rake"
+    }
+  ],
+  "result": {
+    "item": "veggie_way:soybean_seeds",
+    "count": 1
+  }
+}

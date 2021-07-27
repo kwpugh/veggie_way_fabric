@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "veggie_way:soy_milk_cooked_bucket"
+    },
+    {
+      "item": "veggie_way:soy_milk_cooked_bucket"
+    }
+  ],
+  "result": {
+    "item": "veggie_way:soybean_seeds",
+    "count": 1
+  }
+}

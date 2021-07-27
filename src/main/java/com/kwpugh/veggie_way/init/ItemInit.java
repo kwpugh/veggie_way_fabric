@@ -14,23 +14,28 @@ import net.minecraft.util.registry.Registry;
 
 public class ItemInit
 {
-	public static final ItemKnife KNIFE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "knife"), new ItemKnife(new Item.Settings().maxDamage(250).group(VeggieWay.veggie_way)));
+	static int knifeUses = VeggieWay.CONFIG.GENERAL.knifeMaxUses;
+	static int handScrapperUses = VeggieWay.CONFIG.GENERAL.handScrapperMaxUses;
+	static int soyBucketUses = VeggieWay.CONFIG.GENERAL.soyBucketMaxUses;
+	static int millUses = VeggieWay.CONFIG.GENERAL.millMaxUses;
+
+	public static final ItemKnife KNIFE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "knife"), new ItemKnife(new Item.Settings().maxDamage(knifeUses).group(VeggieWay.veggie_way)));
 	public static final ItemHandRake HAND_RAKE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_rake"), new ItemHandRake(ToolMaterials.IRON, -2, -3, new Item.Settings().group(VeggieWay.veggie_way)));
-	public static final ItemHandScraper HAND_SCRAPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_scraper"), new ItemHandScraper(new Item.Settings().maxDamage(250).group(VeggieWay.veggie_way)));
+	public static final ItemHandScraper HAND_SCRAPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_scraper"), new ItemHandScraper(new Item.Settings().maxDamage(handScrapperUses).group(VeggieWay.veggie_way)));
 	public static final Item BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item LARGE_BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "large_bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 
 	public static final Item FRESH_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fresh_tofu"), new Item(new Item.Settings().food(FoodList.fresh_tofu).group(VeggieWay.veggie_way)));
 	public static final Item COOKED_TOFU = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_tofu"), new Item(new Item.Settings().food(FoodList.cooked_tofu).group(VeggieWay.veggie_way)));
 	public static final Item SOY_MILK_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soy_milk_bucket"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
-	public static final ItemCookedSoyBucket SOY_MILK_COOKED_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soy_milk_cooked_bucket"), new ItemCookedSoyBucket(new Item.Settings().maxDamage(16).group(VeggieWay.veggie_way)));
+	public static final ItemCookedSoyBucket SOY_MILK_COOKED_BUCKET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "soy_milk_cooked_bucket"), new ItemCookedSoyBucket(new Item.Settings().maxDamage(soyBucketUses).group(VeggieWay.veggie_way)));
 
 	public static final Item FRIED_EGG = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fried_egg"), new Item(new Item.Settings().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
 	
 	public static final Item COOKED_CARROT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_carrot"), new Item(new Item.Settings().food(FoodList.cooked_carrot).group(VeggieWay.veggie_way)));
 	public static final Item COOKED_BEETROOT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cooked_beetroot"), new Item(new Item.Settings().food(FoodList.cooked_beetroot).group(VeggieWay.veggie_way)));
 
-	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(512).group(VeggieWay.veggie_way)));
+	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(millUses).group(VeggieWay.veggie_way)));
 	public static final ItemFlour FLOUR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "flour"), new ItemFlour(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final ItemDough DOUGH = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "dough"), new ItemDough(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item CHOCOLATE_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "chocolate_bar"), new Item(new Item.Settings().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
