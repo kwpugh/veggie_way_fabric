@@ -74,6 +74,8 @@ public class ModConfig extends PartitioningSerializer.GlobalData
                 + "\nranges from 0.0 - 1.0"
                 + "\n***********************")
         public float chanceSandOnTorch = .4F;
+        public boolean dryingAgentDropFromSandEasy = true;
+        public boolean seedsFromGrassEasy = true;
 
         @Comment("***********************"
                 + "\nItem Max Uses"
