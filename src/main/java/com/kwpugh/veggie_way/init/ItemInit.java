@@ -7,7 +7,7 @@ import com.kwpugh.veggie_way.items.*;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.MushroomStewItem;
+import net.minecraft.item.StewItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -38,16 +38,16 @@ public class ItemInit
 	public static final ItemMill MILL = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mill"), new ItemMill(new Item.Settings().maxDamage(millUses).group(VeggieWay.veggie_way)));
 	public static final ItemFlour FLOUR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "flour"), new ItemFlour(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final ItemDough DOUGH = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "dough"), new ItemDough(new Item.Settings().group(VeggieWay.veggie_way)));
-	public static final Item CHOCOLATE_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "chocolate_bar"), new Item(new Item.Settings().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
+	public static final Item CHOCOLATE_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "chocolate_bar"), new Item(new Item.Settings().food(FoodList.chocolate_bar).group(VeggieWay.veggie_way)));
 
 	public static final ItemPumpkinChunk PUMPKIN_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_chunk"), new ItemPumpkinChunk(new Item.Settings().food(FoodList.pumpkin_chunk).group(VeggieWay.veggie_way)));
 	public static final ItemCactusChunk CACTUS_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_chunk"), new ItemCactusChunk(new Item.Settings().food(FoodList.cactus_chunk).group(VeggieWay.veggie_way)));
 	public static final ItemMelonChunk MELON_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_chunk"), new ItemMelonChunk(new Item.Settings().food(FoodList.melon_chunk).group(VeggieWay.veggie_way)));
 
-	public static final MushroomStewItem PUMPKIN_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_soup"), new MushroomStewItem(new Item.Settings().maxCount(1).food(FoodList.pumpkin_soup).group(VeggieWay.veggie_way)));
-	public static final MushroomStewItem CACTUS_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_soup"), new MushroomStewItem(new Item.Settings().maxCount(1).food(FoodList.cactus_soup).group(VeggieWay.veggie_way)));
-	public static final MushroomStewItem MELON_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_soup"), new MushroomStewItem(new Item.Settings().maxCount(1).food(FoodList.melon_soup).group(VeggieWay.veggie_way)));
-	public static final MushroomStewItem CARROT_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "carrot_soup"), new MushroomStewItem(new Item.Settings().maxCount(1).food(FoodList.carrot_soup).group(VeggieWay.veggie_way)));
+	public static final StewItem PUMPKIN_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.pumpkin_soup).group(VeggieWay.veggie_way)));
+	public static final StewItem CACTUS_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.cactus_soup).group(VeggieWay.veggie_way)));
+	public static final StewItem MELON_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.melon_soup).group(VeggieWay.veggie_way)));
+	public static final StewItem CARROT_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "carrot_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.carrot_soup).group(VeggieWay.veggie_way)));
 
 	public static final Item APPLE_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "apple_pie"), new Item(new Item.Settings().food(FoodList.apple_pie).group(VeggieWay.veggie_way)));
 	public static final Item SWEET_BERRY_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "sweet_berry_pie"), new Item(new Item.Settings().food(FoodList.sweet_berry_pie).group(VeggieWay.veggie_way)));
