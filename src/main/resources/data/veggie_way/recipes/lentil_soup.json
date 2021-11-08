@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        " B "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:lentil"
+        },
+        "B":
+        {
+            "item": "minecraft:bowl"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:lentil_soup",
+        "count": 1
+    }
+}

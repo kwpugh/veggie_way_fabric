@@ -48,10 +48,12 @@ public class ItemInit
 	public static final StewItem CACTUS_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.cactus_soup).group(VeggieWay.veggie_way)));
 	public static final StewItem MELON_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.melon_soup).group(VeggieWay.veggie_way)));
 	public static final StewItem CARROT_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "carrot_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.carrot_soup).group(VeggieWay.veggie_way)));
+	public static final StewItem LENTIL_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "lentil_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.lentil_soup).group(VeggieWay.veggie_way)));
 
 	public static final Item APPLE_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "apple_pie"), new Item(new Item.Settings().food(FoodList.apple_pie).group(VeggieWay.veggie_way)));
 	public static final Item SWEET_BERRY_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "sweet_berry_pie"), new Item(new Item.Settings().food(FoodList.sweet_berry_pie).group(VeggieWay.veggie_way)));
 	public static final Item MELON_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_pie"), new Item(new Item.Settings().food(FoodList.melon_pie).group(VeggieWay.veggie_way)));
+	public static final Item CACTUS_PIE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_pie"), new Item(new Item.Settings().food(FoodList.cactus_pie).group(VeggieWay.veggie_way)));
 
 	public static final ItemSuperPetals SUPER_PETALS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "super_petals"), new ItemSuperPetals(new Item.Settings().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
 

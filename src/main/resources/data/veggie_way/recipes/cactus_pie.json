@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "tag": "c:flour"
+        },
+        {
+            "item": "veggie_way:cactus_chunk"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        }
+    ],
+    "result": {
+        "item": "veggie_way:cactus_pie",
+        "count": 1
+    }
+}

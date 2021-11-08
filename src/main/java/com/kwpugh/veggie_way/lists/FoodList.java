@@ -41,6 +41,9 @@ public class FoodList
     static int berryPieHunger = VeggieWay.CONFIG.GENERAL.berry_pie_hunger;
     static float berryPieSaturation = VeggieWay.CONFIG.GENERAL.berry_pie_saturation;
 
+    static int cactusPieHunger = VeggieWay.CONFIG.GENERAL.cactus_pie_hunger;
+    static float cactusPieSaturation = VeggieWay.CONFIG.GENERAL.cactus_pie_saturation;
+
     static int pumpkinSoupHunger = VeggieWay.CONFIG.GENERAL.pumpkin_soup_hunger;
     static float pumpkinSoupSaturation = VeggieWay.CONFIG.GENERAL.pumpkin_soup_saturation;
 
@@ -52,6 +55,9 @@ public class FoodList
 
     static int carrotSoupHunger = VeggieWay.CONFIG.GENERAL.carrot_soup_hunger;
     static float carrotSoupSaturation = VeggieWay.CONFIG.GENERAL.carrot_soup_saturation;
+
+    static int lentilSoupHunger = VeggieWay.CONFIG.GENERAL.lentil_soup_hunger;
+    static float lentilSoupSaturation = VeggieWay.CONFIG.GENERAL.lentil_soup_saturation;
 
     static int superPetalsHunger = VeggieWay.CONFIG.GENERAL.super_petals_hunger;
     static float superPetalsSaturation = VeggieWay.CONFIG.GENERAL.super_petals_saturation;
@@ -103,11 +109,13 @@ public class FoodList
     public static FoodComponent apple_pie = (new FoodComponent.Builder()).hunger(applePieHunger).saturationModifier(applePieSaturation).alwaysEdible().snack().build();
     public static FoodComponent melon_pie = (new FoodComponent.Builder()).hunger(melonPieHunger).saturationModifier(melonPieSaturation).alwaysEdible().snack().build();
     public static FoodComponent sweet_berry_pie = (new FoodComponent.Builder()).hunger(berryPieHunger).saturationModifier(berryPieSaturation).alwaysEdible().snack().build();
+    public static FoodComponent cactus_pie = (new FoodComponent.Builder()).hunger(cactusPieHunger).saturationModifier(cactusPieSaturation).alwaysEdible().snack().build();
 
     public static FoodComponent pumpkin_soup = (new FoodComponent.Builder()).hunger(pumpkinSoupHunger).saturationModifier(pumpkinSoupSaturation).alwaysEdible().snack().build();
     public static FoodComponent cactus_soup = (new FoodComponent.Builder()).hunger(cactusSoupHunger).saturationModifier(cactusSoupSaturation).alwaysEdible().snack().build();
     public static FoodComponent melon_soup = (new FoodComponent.Builder()).hunger(melonSoupHunger).saturationModifier(melonSoupSaturation).alwaysEdible().snack().build();
     public static FoodComponent carrot_soup = (new FoodComponent.Builder()).hunger(carrotSoupHunger).saturationModifier(carrotSoupSaturation).alwaysEdible().snack().build();
+    public static FoodComponent lentil_soup = (new FoodComponent.Builder()).hunger(lentilSoupHunger).saturationModifier(lentilSoupSaturation).alwaysEdible().snack().build();
 
     public static FoodComponent super_petals = (new FoodComponent.Builder()).hunger(superPetalsHunger).saturationModifier(superPetalsSaturation).alwaysEdible().snack().build();
 

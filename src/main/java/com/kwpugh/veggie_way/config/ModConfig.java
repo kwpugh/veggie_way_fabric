@@ -44,6 +44,8 @@ public class ModConfig extends PartitioningSerializer.GlobalData
         public float melon_pie_saturation = 0.2F;
         public int berry_pie_hunger = 6;
         public float berry_pie_saturation = 0.2F;
+        public int cactus_pie_hunger = 6;
+        public float cactus_pie_saturation = 0.2F;
         public int pumpkin_soup_hunger = 6;
         public float pumpkin_soup_saturation = 0.3F;
         public int cactus_soup_hunger = 6;
@@ -52,6 +54,8 @@ public class ModConfig extends PartitioningSerializer.GlobalData
         public float melon_soup_saturation = 0.3F;
         public int carrot_soup_hunger = 6;
         public float carrot_soup_saturation = 0.3F;
+        public int lentil_soup_hunger = 6;
+        public float lentil_soup_saturation = 0.3F;
         public int super_petals_hunger = 6;
         public float super_petals_saturation = 0.8F;
         public int energy_drink_hunger = 9;
