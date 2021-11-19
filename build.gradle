@@ -41,10 +41,10 @@ dependencies {
 			}
 
 	//Pughlib for common mixin
-	include "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.8"
-	modImplementation "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.8"
+	include "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.9"
+	modImplementation "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.9"
 
-	//	// REI
+//	// REI
 //	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:6.0.251-alpha"
 //	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:6.0.251-alpha"
 
