@@ -28,6 +28,10 @@ public class VeggieWay implements ModInitializer
     public static final String MOD_NAME = "The Veggie Way";
     public static ItemGroup veggie_way = FabricItemGroupBuilder.create(new Identifier(MOD_ID,"veggie_way")).icon(()->new ItemStack(Items.CARROT)).build();
     public static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, PartitioningSerializer.wrap(JanksonConfigSerializer::new)).getConfig();
+    public static void log(Level level, String message)
+    {
+        LOGGER.log(level, "["+MOD_NAME+"] " + message);
+    }
 
     @Override
     public void onInitialize()
@@ -38,10 +42,4 @@ public class VeggieWay implements ModInitializer
         Compostables.init();
         LootInit.init();
     }
-    
-    public static void log(Level level, String message)
-    {
-        LOGGER.log(level, "["+MOD_NAME+"] " + message);
-    }
-
 }

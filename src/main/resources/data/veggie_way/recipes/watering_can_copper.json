@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "  B",
+        "BAB",
+        "BBB"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:bone_meal"
+        },
+        "B":
+        {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:watering_can_copper",
+        "count": 1
+    }
+}

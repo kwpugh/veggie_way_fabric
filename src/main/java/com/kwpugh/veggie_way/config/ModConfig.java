@@ -88,6 +88,7 @@ public class ModConfig extends PartitioningSerializer.GlobalData
         public int handScrapperMaxUses = 250;
         public int soyBucketMaxUses = 16;
         public int millMaxUses = 512;
+        public int wateringCanMaxUses = 20;
     }
 }
 

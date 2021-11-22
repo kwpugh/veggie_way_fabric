@@ -18,10 +18,13 @@ public class ItemInit
 	static int handScrapperUses = VeggieWay.CONFIG.GENERAL.handScrapperMaxUses;
 	static int soyBucketUses = VeggieWay.CONFIG.GENERAL.soyBucketMaxUses;
 	static int millUses = VeggieWay.CONFIG.GENERAL.millMaxUses;
+	static int wateringCanUSes = VeggieWay.CONFIG.GENERAL.wateringCanMaxUses;
 
 	public static final ItemKnife KNIFE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "knife"), new ItemKnife(new Item.Settings().maxDamage(knifeUses).group(VeggieWay.veggie_way)));
 	public static final ItemHandRake HAND_RAKE = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_rake"), new ItemHandRake(ToolMaterials.IRON, -2, -3, new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final ItemHandScraper HAND_SCRAPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "hand_scraper"), new ItemHandScraper(new Item.Settings().maxDamage(handScrapperUses).group(VeggieWay.veggie_way)));
+	public static final ItemWateringCan WATERING_CAN_COPPER = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "watering_can_copper"), new ItemWateringCan(new Item.Settings().maxDamage(wateringCanUSes).group(VeggieWay.veggie_way)));
+
 	public static final Item BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item LARGE_BAMBOO_SHEET = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "large_bamboo_sheet"), new Item(new Item.Settings().group(VeggieWay.veggie_way)));
 

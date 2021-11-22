@@ -38,6 +38,10 @@
 	"item.veggie_way.knife": "Knife",
 	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
 
+	"item.veggie_way.watering_can_copper": "Watering Can",
+	"item.veggie_way.watering_can_copper.line1": "Helps boost the growth of many plants and crops",
+	"item.veggie_way.watering_can_copper.line2": "Water remaining: %s",
+
 	"item.veggie_way.mill": "Mill",	
 	"item.veggie_way.mill.line1": "Used to grind grains into flour",	
 	"item.veggie_way.flour": "Flour",
