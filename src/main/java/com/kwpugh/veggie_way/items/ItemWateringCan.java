@@ -48,7 +48,7 @@ public class ItemWateringCan extends Item
         }
 
         BlockHitResult hitResult = raycast(world, player, RaycastContext.FluidHandling.SOURCE_ONLY);
-        if (hitResult.getType() != HitResult.Type.BLOCK) return TypedActionResult.fail(stack);
+        if (hitResult.getType() != HitResult.Type.BLOCK) return TypedActionResult.success(stack);
 
         BlockPos targetPos = hitResult.getBlockPos();
         BlockState state = world.getBlockState(targetPos);
@@ -66,13 +66,9 @@ public class ItemWateringCan extends Item
                     block instanceof CocoaBlock ||
                     block instanceof SweetBerryBushBlock ||
                     block instanceof FungusBlock ||
-                    block instanceof StemBlock ||     // pumkins and melons
-                    block instanceof SaplingBlock || //all saplings
-                    block instanceof KelpBlock ||
-                    block instanceof KelpPlantBlock ||
-                    block instanceof AzaleaBlock ||
-                    block instanceof VineBlock ||
-                    block instanceof GrassBlock
+                    block instanceof StemBlock ||      // pumkins and melons
+                    block instanceof SaplingBlock ||   //all saplings
+                    block instanceof AzaleaBlock
                     )
             {
                 Fertilizable fertilizable = (Fertilizable) block;
@@ -85,18 +81,6 @@ public class ItemWateringCan extends Item
                             fertilizable.grow((ServerWorld) world, world.random, targetPos, state);
                         }
                     }
-                }
-            }
-
-            // Plants that need their blockstate ticked
-            if(     block instanceof SugarCaneBlock ||
-                    block instanceof CactusBlock ||
-                    block instanceof ChorusFlowerBlock
-                    )
-            {
-                for(int i = 0; i < 30; i++)
-                {
-                    block.randomTick(state, (ServerWorld) world, targetPos, world.random);  // not really working as expected, need to investigate another approach
                 }
             }
 
@@ -150,5 +134,7 @@ public class ItemWateringCan extends Item
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context)
     {
         tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line1").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line2").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line3", stack.getDamage()).formatted(Formatting.AQUA)));
     }
 }

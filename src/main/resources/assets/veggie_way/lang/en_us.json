@@ -40,7 +40,8 @@
 
 	"item.veggie_way.watering_can_copper": "Watering Can",
 	"item.veggie_way.watering_can_copper.line1": "Helps boost the growth of many plants and crops",
-	"item.veggie_way.watering_can_copper.line2": "Water remaining: %s",
+	"item.veggie_way.watering_can_copper.line2": "Must be empty to refill, sneak+right-click to empty",
+	"item.veggie_way.watering_can_copper.line3": "Water remaining: %s",
 
 	"item.veggie_way.mill": "Mill",	
 	"item.veggie_way.mill.line1": "Used to grind grains into flour",	
