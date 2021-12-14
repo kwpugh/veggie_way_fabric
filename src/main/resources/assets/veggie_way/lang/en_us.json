@@ -1,4 +1,16 @@
-{	
+{
+	"item.veggie_way.quinoa_plant": "Quinoa Plant",
+	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+
+	"item.veggie_way.soybean_plant": "Soybean Plant",
+	"block.veggie_way.soybean_plant": "Soybean Plant",
+
+	"item.veggie_way.lentil_plant": "Lentil Plant",
+	"block.veggie_way.lentil_plant": "Lentil Plant",
+	
+	"item.veggie_way.corn_plant": "Corn Plant",
+	"block.veggie_way.corn_plant": "Corn Plant",
+
 	"item.veggie_way.plant_quinoa": "Quinoa Plant",
 	"block.veggie_way.plant_quinoa": "Quinoa Plant",
 
@@ -7,7 +19,7 @@
 
 	"item.veggie_way.plant_lentil": "Lentil Plant",
 	"block.veggie_way.plant_lentil": "Lentil Plant",
-	
+
 	"item.veggie_way.plant_corn": "Corn Plant",
 	"block.veggie_way.plant_corn": "Corn Plant",
 			
