@@ -35,8 +35,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	//Pughlib for common mixin
-	include "com.kwpugh:pugh_lib_fabric_1.18.1:1.2.14"
-	modImplementation "com.kwpugh:pugh_lib_fabric_1.18.1:1.2.14"
+	include "com.kwpugh:pugh_lib_fabric_1.18.1:1.2.15"
+	modImplementation "com.kwpugh:pugh_lib_fabric_1.18.1:1.2.15"
 
 	// Cloth Config
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig}") {
