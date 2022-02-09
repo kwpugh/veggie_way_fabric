@@ -12,5 +12,6 @@ public class BlockRenders
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.PLANT_SOYBEAN, RenderLayer.getCutoutMipped());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.PLANT_LENTIL, RenderLayer.getCutoutMipped());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.PLANT_CORN, RenderLayer.getCutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.PLANT_COTTON, RenderLayer.getCutoutMipped());
 	}	
 }

@@ -22,6 +22,9 @@
 
 	"item.veggie_way.plant_corn": "Corn Plant",
 	"block.veggie_way.plant_corn": "Corn Plant",
+
+	"item.veggie_way.plant_cotton": "Cotton Plant",
+	"block.veggie_way.plant_cotton": "Cotton Plant",
 			
 	"item.veggie_way.hand_rake": "Hand Rake",
 	"item.veggie_way.hand_rake.line1": "Used on sand to get drying agent",
@@ -85,7 +88,10 @@
 		
 	"item.veggie_way.corn_seeds": "Corn Seeds",	
 	"item.veggie_way.corn_seeds.line1": "Plant on Farmland to grow Corn Plant",
-	
+
+	"item.veggie_way.cotton_seeds": "Cotton Seeds",
+	"item.veggie_way.cotton_seeds.line1": "Plant on Farmland to grow Cotton Plant",
+
 	"item.veggie_way.quinoa": "Red Quinoa",
 	"item.veggie_way.quinoa.line1": "A wonderful source of protein",
 
@@ -97,6 +103,9 @@
 
 	"item.veggie_way.corn": "Corn",
 	"item.veggie_way.corn.line1": "A wonderful source of carbs",
+
+	"item.veggie_way.cotton": "Cotton",
+	"item.veggie_way.cotton.line1": "Used to make string",
 					
 	"item.veggie_way.apple_pie": "Apple Pie",
 	"item.veggie_way.melon_pie": "Melon Pie",

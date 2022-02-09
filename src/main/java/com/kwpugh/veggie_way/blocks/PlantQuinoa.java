@@ -33,7 +33,7 @@ public class PlantQuinoa extends CropBlock
     public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) 
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.quinoa_plant").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("block.veggie_way.plant_quinoa").formatted(Formatting.GREEN)));
     }
 
 }

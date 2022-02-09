@@ -72,6 +72,10 @@ public class ItemInit
 	public static final ItemSeedCorn CORN_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn_seeds"), new ItemSeedCorn(BlockInit.PLANT_CORN, (new Item.Settings().group(VeggieWay.veggie_way))));
 	public static final ItemCropCorn CORN = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "corn"), new ItemCropCorn(new Item.Settings().food(FoodList.corn).group(VeggieWay.veggie_way)));
 
+	public static final ItemSeedCotton COTTON_SEEDS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cotton_seeds"), new ItemSeedCotton(BlockInit.PLANT_COTTON, (new Item.Settings().group(VeggieWay.veggie_way))));
+	public static final ItemCropCotton COTTON = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cotton"), new ItemCropCotton(new Item.Settings().group(VeggieWay.veggie_way)));
+
+
 	public static final ItemDryingAgent DRYING_AGENT = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "drying_agent"), new ItemDryingAgent(new Item.Settings().group(VeggieWay.veggie_way)));
 
 	public static final ItemCarbs CARBS = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "carbs"), new ItemCarbs(new Item.Settings().group(VeggieWay.veggie_way)));

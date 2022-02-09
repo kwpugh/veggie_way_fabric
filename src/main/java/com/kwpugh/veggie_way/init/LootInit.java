@@ -62,6 +62,15 @@ public class LootInit
 			insert(new LootTableInsert(CORN_SEEDS,
 					new Identifier("minecraft", "blocks/grass")
 			));
+
+			FabricLootPoolBuilder COTTON_SEEDS = FabricLootPoolBuilder.builder()
+					.rolls(ConstantLootNumberProvider.create(1))
+					.with(ItemEntry.builder(ItemInit.COTTON_SEEDS))
+					.withCondition(RandomChanceLootCondition.builder(0.03F).build());
+
+			insert(new LootTableInsert(COTTON_SEEDS,
+					new Identifier("minecraft", "blocks/grass")
+			));
 		}
 
 		if(dryingAgentDrop)

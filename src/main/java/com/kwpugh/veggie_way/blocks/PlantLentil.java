@@ -33,6 +33,6 @@ public class PlantLentil extends CropBlock
     public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.lentil_plant").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("block.veggie_way.plant_lentil").formatted(Formatting.GREEN)));
     }
 }

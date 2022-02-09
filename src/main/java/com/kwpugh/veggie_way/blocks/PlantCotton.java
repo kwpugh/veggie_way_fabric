@@ -14,25 +14,24 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class PlantSoybean extends CropBlock
-{ 
-    public PlantSoybean(Settings builder)
+public class PlantCotton extends CropBlock
+{
+    public PlantCotton(Settings builder)
     {
         super(builder);
     }
-    
+
     @Environment(EnvType.CLIENT)
-    @Override
-    public ItemConvertible getSeedsItem()
+    protected ItemConvertible getSeedsItem()
     {
-        return ItemInit.SOYBEAN_SEEDS;
+        return ItemInit.CORN_SEEDS;
     }
 
     @Environment(EnvType.CLIENT)
     @Override
-    public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) 
+    public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.plant_soybean").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("block.veggie_way.plant_cotton").formatted(Formatting.GREEN)));
     }
 }

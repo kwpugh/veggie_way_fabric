@@ -34,6 +34,6 @@ public class PlantCorn extends CropBlock
     public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.corn_plant").formatted(Formatting.GREEN)));
+        tooltip.add((new TranslatableText("block.veggie_way.plant_corn").formatted(Formatting.GREEN)));
     }
 }
