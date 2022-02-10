@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way.items.powders;
+package com.kwpugh.veggie_way.items.crops;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -10,9 +10,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemWheatgerm extends Item
+public class ItemCarbs extends Item
 {
-	public ItemWheatgerm(Settings properties)
+	public ItemCarbs(Settings properties)
 	{
 		super(properties);
 	}
@@ -20,7 +20,7 @@ public class ItemWheatgerm extends Item
 	@Override
 	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
 		super.appendTooltip(stack, world, tooltip, context);
-		tooltip.add((new TranslatableText("item.veggie_way.wheatgerm.line1").formatted(Formatting.GREEN)));
-		tooltip.add((new TranslatableText("item.veggie_way.wheatgerm.line2").formatted(Formatting.GREEN)));
+		tooltip.add((new TranslatableText("item.veggie_way.carbs.line1").formatted(Formatting.GREEN)));
+		tooltip.add((new TranslatableText("item.veggie_way.carbs.line2").formatted(Formatting.GREEN)));
 	}
 }

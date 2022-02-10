@@ -5,7 +5,6 @@ import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.crops.*;
 import com.kwpugh.veggie_way.items.food.*;
-import com.kwpugh.veggie_way.items.powders.*;
 import com.kwpugh.veggie_way.items.tools.*;
 import com.kwpugh.veggie_way.lists.FoodList;
 

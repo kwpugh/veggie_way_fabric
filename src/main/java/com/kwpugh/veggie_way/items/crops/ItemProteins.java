@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way.items.powders;
+package com.kwpugh.veggie_way.items.crops;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;

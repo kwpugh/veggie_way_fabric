@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way.items.powders;
+package com.kwpugh.veggie_way.items.crops;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -10,9 +10,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ItemVitamins extends Item
+public class ItemCaffeine extends Item
 {
-	public ItemVitamins(Settings properties)
+	public ItemCaffeine(Settings properties)
 	{
 		super(properties);
 	}
@@ -20,7 +20,7 @@ public class ItemVitamins extends Item
 	@Override
 	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
 		super.appendTooltip(stack, world, tooltip, context);
-		tooltip.add((new TranslatableText("item.veggie_way.vitamins.line1").formatted(Formatting.GREEN)));
-		tooltip.add((new TranslatableText("item.veggie_way.vitamins.line2").formatted(Formatting.GREEN)));
+		tooltip.add((new TranslatableText("item.veggie_way.caffeine.line1").formatted(Formatting.GREEN)));
+		tooltip.add((new TranslatableText("item.veggie_way.caffeine.line2").formatted(Formatting.GREEN)));
 	}
 }
