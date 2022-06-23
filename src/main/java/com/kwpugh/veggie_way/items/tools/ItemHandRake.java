@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.math.BlockPos;
@@ -84,8 +83,8 @@ public class ItemHandRake extends ShovelItem
 	@Override
 	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
 		super.appendTooltip(stack, world, tooltip, context);
-		tooltip.add((new TranslatableText("item.veggie_way.hand_rake.line1").formatted(Formatting.GREEN)));
-		tooltip.add((new TranslatableText("item.veggie_way.hand_rake.line2").formatted(Formatting.GREEN)));
+		tooltip.add((Text.translatable("item.veggie_way.hand_rake.line1").formatted(Formatting.GREEN)));
+		tooltip.add((Text.translatable("item.veggie_way.hand_rake.line2").formatted(Formatting.GREEN)));
 	}
 
 

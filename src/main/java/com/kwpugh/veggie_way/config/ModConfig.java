@@ -14,6 +14,16 @@ public class ModConfig extends PartitioningSerializer.GlobalData
     public static class General implements ConfigData
     {
         @Comment("***********************"
+                + "\nSeed Drop chances"
+                + "\n***********************")
+        public float quionaFromGrass = 0.03F;
+        public float soybeanFromGrass = 0.03F;
+        public float lentilFromGrass = 0.03F;
+        public float cornFromGrass = 0.03F;
+        public float cottonFromGrass = 0.03F;
+        public float dryingAgentFromSand = 0.12F;
+
+        @Comment("***********************"
                 + "\nFood Settings"
                 + "\n***********************")
         public int fresh_tofu_hunger = 3;

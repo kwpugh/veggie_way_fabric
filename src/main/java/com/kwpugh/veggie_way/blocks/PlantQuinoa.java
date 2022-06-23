@@ -9,7 +9,6 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.BlockView;
 
@@ -33,7 +32,7 @@ public class PlantQuinoa extends CropBlock
     public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) 
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.plant_quinoa").formatted(Formatting.GREEN)));
+        tooltip.add((Text.translatable("block.veggie_way.plant_quinoa").formatted(Formatting.GREEN)));
     }
 
 }

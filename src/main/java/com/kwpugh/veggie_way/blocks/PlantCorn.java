@@ -1,9 +1,6 @@
 package com.kwpugh.veggie_way.blocks;
 
-import java.util.List;
-
 import com.kwpugh.veggie_way.init.ItemInit;
-
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
@@ -12,9 +9,10 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.BlockView;
+
+import java.util.List;
 
 public class PlantCorn extends CropBlock
 { 
@@ -34,6 +32,6 @@ public class PlantCorn extends CropBlock
     public void appendTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options)
     {
         super.appendTooltip(stack, view, tooltip, options);
-        tooltip.add((new TranslatableText("block.veggie_way.plant_corn").formatted(Formatting.GREEN)));
+        tooltip.add((Text.translatable("block.veggie_way.plant_corn").formatted(Formatting.GREEN)));
     }
 }

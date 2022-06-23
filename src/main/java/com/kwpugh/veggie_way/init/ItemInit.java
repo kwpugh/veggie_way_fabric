@@ -1,18 +1,17 @@
 package com.kwpugh.veggie_way.init;
 
-import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
-
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.crops.*;
 import com.kwpugh.veggie_way.items.food.*;
 import com.kwpugh.veggie_way.items.tools.*;
 import com.kwpugh.veggie_way.lists.FoodList;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.StewItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import static com.kwpugh.veggie_way.VeggieWay.MOD_ID;
 
 public class ItemInit
 {
@@ -45,9 +44,9 @@ public class ItemInit
 	public static final ItemDough DOUGH = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "dough"), new ItemDough(new Item.Settings().group(VeggieWay.veggie_way)));
 	public static final Item CHOCOLATE_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "chocolate_bar"), new Item(new Item.Settings().food(FoodList.chocolate_bar).group(VeggieWay.veggie_way)));
 
-	public static final ItemPumpkinChunk PUMPKIN_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_chunk"), new ItemPumpkinChunk(new Item.Settings().food(FoodList.pumpkin_chunk).group(VeggieWay.veggie_way)));
-	public static final ItemCactusChunk CACTUS_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_chunk"), new ItemCactusChunk(new Item.Settings().food(FoodList.cactus_chunk).group(VeggieWay.veggie_way)));
-	public static final ItemMelonChunk MELON_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_chunk"), new ItemMelonChunk(new Item.Settings().food(FoodList.melon_chunk).group(VeggieWay.veggie_way)));
+	public static final ItemChunkBase PUMPKIN_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_chunk"), new ItemChunkBase(new Item.Settings().food(FoodList.pumpkin_chunk).group(VeggieWay.veggie_way)));
+	public static final ItemChunkBase CACTUS_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_chunk"), new ItemChunkBase(new Item.Settings().food(FoodList.cactus_chunk).group(VeggieWay.veggie_way)));
+	public static final ItemChunkBase MELON_CHUNK = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "melon_chunk"), new ItemChunkBase(new Item.Settings().food(FoodList.melon_chunk).group(VeggieWay.veggie_way)));
 
 	public static final StewItem PUMPKIN_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "pumpkin_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.pumpkin_soup).group(VeggieWay.veggie_way)));
 	public static final StewItem CACTUS_SOUP = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cactus_soup"), new StewItem(new Item.Settings().maxCount(1).food(FoodList.cactus_soup).group(VeggieWay.veggie_way)));

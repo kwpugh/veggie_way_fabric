@@ -4,7 +4,6 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
@@ -20,6 +19,6 @@ public class ItemCropQuinoa extends Item
 	@Override
 	public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
 		super.appendTooltip(stack, world, tooltip, context);
-		tooltip.add((new TranslatableText("item.veggie_way.quinoa.line1").formatted(Formatting.GREEN)));
+		tooltip.add((Text.translatable("item.veggie_way.quinoa.line1").formatted(Formatting.GREEN)));
 	}
 }

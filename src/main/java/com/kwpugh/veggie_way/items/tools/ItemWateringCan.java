@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -133,8 +132,8 @@ public class ItemWateringCan extends Item
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context)
     {
-        tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line1").formatted(Formatting.GREEN)));
-        tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line2").formatted(Formatting.GREEN)));
-        tooltip.add((new TranslatableText("item.veggie_way.watering_can_copper.line3", stack.getDamage()).formatted(Formatting.AQUA)));
+        tooltip.add((Text.translatable("item.veggie_way.watering_can_copper.line1").formatted(Formatting.GREEN)));
+        tooltip.add((Text.translatable("item.veggie_way.watering_can_copper.line2").formatted(Formatting.GREEN)));
+        tooltip.add((Text.translatable("item.veggie_way.watering_can_copper.line3", stack.getDamage()).formatted(Formatting.AQUA)));
     }
 }
