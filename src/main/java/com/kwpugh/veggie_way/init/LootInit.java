@@ -2,7 +2,6 @@ package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
-import net.fabricmc.fabric.api.loot.v2.LootTableSource;
 import net.minecraft.block.Blocks;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -25,13 +24,8 @@ public class LootInit
 		if(seedsFromGrass)
 		{
 			LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-				if (Blocks.GRASS.getLootTableId().equals(id))
+				if(Blocks.GRASS.getLootTableId().equals(id) && source.isBuiltin())
 				{
-					if (source != LootTableSource.VANILLA)
-					{
-						throw new AssertionError("grass loot table should have LootTableSource.VANILLA");
-					}
-
 					LootPool QUINOA_SEEDS = LootPool.builder()
 							.with(ItemEntry.builder(ItemInit.QUINOA_SEEDS).build())
 							.rolls(ConstantLootNumberProvider.create(1))
@@ -79,13 +73,8 @@ public class LootInit
 		if(dryingAgentDrop)
 		{
 			LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-				if (Blocks.SAND.getLootTableId().equals(id))
+				if(Blocks.SAND.getLootTableId().equals(id) && source.isBuiltin())
 				{
-					if (source != LootTableSource.VANILLA)
-					{
-						throw new AssertionError("sand loot table should have LootTableSource.VANILLA");
-					}
-
 					LootPool DRYING_AGENT = LootPool.builder()
 							.with(ItemEntry.builder(ItemInit.DRYING_AGENT).build())
 							.rolls(ConstantLootNumberProvider.create(1))
