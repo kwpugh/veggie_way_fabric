@@ -1,6 +1,8 @@
 package com.kwpugh.veggie_way;
 
 import com.kwpugh.veggie_way.config.ModConfig;
+import com.kwpugh.veggie_way.handlers.EventHandler;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -41,5 +43,6 @@ public class VeggieWay implements ModInitializer
         ItemInit.init();
         Compostables.init();
         LootInit.init();
+        PlayerBlockBreakEvents.AFTER.register(EventHandler::onBlockBreak);
     }
 }
