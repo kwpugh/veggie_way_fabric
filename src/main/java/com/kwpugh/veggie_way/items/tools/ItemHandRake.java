@@ -8,6 +8,7 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
@@ -36,11 +37,11 @@ public class ItemHandRake extends ShovelItem
 				});
 
 				double r = world.random.nextDouble();
-				if (r <= 0.3)
+				if (r <= 0.4)
 				{
 					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(ItemInit.DRYING_AGENT, 1));
 				}
-				else if (r > 0.3)
+				else if (r > 0.4)
 				{
 					//just drop the normal block, no drying agent
 				}
@@ -69,7 +70,40 @@ public class ItemHandRake extends ShovelItem
 				{
 					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(ItemInit.CORN_SEEDS, 1));
 				}
-				else if (r > 0.5)
+				else if (r > 0.4 && r <= 0.5)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(Items.CARROT, 1));
+				}
+				else if (r > 0.5 && r <= 0.6)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(Items.BEETROOT_SEEDS, 1));
+				}
+				else if (r > 0.6 && r <= 0.7)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(Items.POTATO, 1));
+				}
+				else if (r > 0.7)
+				{
+					//Nothing right now
+				}
+			}
+
+			if(block == Blocks.MYCELIUM)
+			{
+				stack.damage(1, miner, (e) -> {
+					e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
+				});
+
+				double r = world.random.nextDouble();
+				if (r <= 0.1)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(Items.BROWN_MUSHROOM, 1));
+				}
+				else if (r > 0.1 && r <= 0.2)
+				{
+					ItemScatterer.spawn(world,pos.getX(),pos.getY(),pos.getZ(),new ItemStack(Items.RED_MUSHROOM, 1));
+				}
+				else if (r > 0.2)
 				{
 					//Nothing right now
 				}
