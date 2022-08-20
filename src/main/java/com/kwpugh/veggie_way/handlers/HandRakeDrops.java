@@ -20,7 +20,7 @@ public class HandRakeDrops
         Block block = state.getBlock();
         if (!world.isClient() && state.getHardness(world,pos) != 0.0F)
         {
-            if(block == Blocks.SAND)
+            if(block == Blocks.SAND || block == Blocks.RED_SAND)
             {
                 stack.damage(1, player, (e) -> {
                     e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
