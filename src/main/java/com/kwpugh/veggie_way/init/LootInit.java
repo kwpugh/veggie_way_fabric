@@ -8,6 +8,11 @@ import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 
+/*
+	Inserts seeds and drying agent
+	into vanilla loot tables for
+	Sand and Grass blocks
+ */
 public class LootInit
 {
 	static boolean dryingAgentDrop = VeggieWay.CONFIG.GENERAL.dryingAgentDropFromSandEasy;

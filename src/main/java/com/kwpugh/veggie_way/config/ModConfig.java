@@ -15,6 +15,7 @@ public class ModConfig extends PartitioningSerializer.GlobalData
     {
         @Comment("***********************"
                 + "\nSeed Drop chances"
+                + "\n- added to vanilla loot tables"
                 + "\n***********************")
         public float quionaFromGrass = 0.03F;
         public float soybeanFromGrass = 0.03F;
