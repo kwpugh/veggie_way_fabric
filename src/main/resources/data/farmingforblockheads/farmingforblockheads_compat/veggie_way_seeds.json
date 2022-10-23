@@ -1,0 +1,28 @@
+{
+  "modId": "veggie_way",
+  "group": {
+    "name": "VeggieWay Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "veggie_way:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "veggie_way:quinoa_seeds"
+    },
+    {
+      "output": "veggie_way:soybean_seeds"
+    },
+    {
+      "output": "veggie_way:lentil_seeds"
+    },
+    {
+      "output": "veggie_way:corn_seeds"
+    },
+    {
+      "output": "veggie_way:cotton_seeds"
+    }
+  ]
+}
