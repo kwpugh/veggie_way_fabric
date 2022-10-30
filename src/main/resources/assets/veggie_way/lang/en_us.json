@@ -168,7 +168,7 @@
 	"item.veggie_way.superfood_bar": "Superfood Bar",
 	"item.veggie_way.superfood_bar.line1": "A very hearty meal",
 		
-	"itemGroup.veggie_way.veggie_way": "The Veggie Way",
+	"itemGroup.veggie_way.veggie_way_group": "The Veggie Way",
 
 	"config.veggie_way.chunks_category": "Chunk Hunger and Saturation Values",
 	"config.veggie_way.pie_category":"Pie Hunger and Saturation Values",
